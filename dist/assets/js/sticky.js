@@ -1,0 +1,1 @@
+$(document).ready((function(){const s=$(".bandeau-covid").height();let a=!1;$(window).scroll((function(){!1===a&&$(this).scrollTop()>=s?(a=!0,$("nav").addClass("sticky"),$("header").addClass("navSticky")):!0===a&&$(this).scrollTop()<s&&(a=!1,$("nav").removeClass("sticky"),$("header").removeClass("navSticky"))}))}));

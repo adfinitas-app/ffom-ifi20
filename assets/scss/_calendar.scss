@@ -1,0 +1,116 @@
+.calendar {
+    padding: 150px 20px 20px 20px;
+    position: relative;
+
+    .title {
+        color: $color-dark-blue;
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        
+        .my-border {
+            display: inline-block;
+            border-bottom: 5px solid rgba(0, 0, 0, 0.10);
+            
+            .red {
+                color: $color-urgency;
+            }
+        }
+    }
+
+    .votre-decla {
+        color: $color-dark-blue;
+        font-size: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .en-raison {
+        color: $color-grey;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    .date-limite {
+        color: $color-dark-blue;
+        font-size: 20px;
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    .declaration-type-item {
+        opacity: 0.3;
+        color: $color-dark-blue;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        cursor: pointer;
+
+        .picto {
+            position: relative;
+
+            &.en-ligne {
+                left: -10px;
+                top: -1px;
+            }
+
+            &.en-papier {
+                left: -10px;
+                top: -8px;
+            }
+        }
+
+        &.active {
+            opacity: 1.0;
+        }
+    }
+
+    .bloc-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+
+        .jour {
+            font-size: 20px;
+            color: $color-urgency;
+            text-transform: uppercase;
+            line-height: 0.9;
+        }
+
+        .date {
+            font-size: 40px;
+            color: $color-urgency;
+            text-transform: uppercase;
+            line-height: 0.9;
+        }
+
+        .avant {
+            font-size: 14px;
+            color: $color-urgency;
+            text-transform: uppercase;
+            line-height: 0.9;
+        }
+
+        .zone {
+            color: $color-dark-blue;
+            font-size: 22px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+
+        .interrogation {
+            cursor: pointer;
+        }
+    }
+
+    .declaration-type-content {
+        min-height: 200px;
+
+        &.hidden {
+            display: none;
+        }
+    }
+}

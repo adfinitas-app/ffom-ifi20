@@ -1,0 +1,26 @@
+.bandeau-covid {
+    min-height: 60px;
+    background-color: $color-urgency;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+
+    p {
+
+        span.covid {
+            font-weight: bold;
+            margin: 0 5px;
+        }
+
+        span.exclamation {
+            font-weight: bold;
+            border: 3px solid $white;
+            border-radius: 50%;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

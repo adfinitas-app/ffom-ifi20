@@ -1,0 +1,62 @@
+.contact {
+    padding: 60px 20px 20px 20px;
+
+    .bloc-contact {
+        background-color: $color-very-light-grey;
+        padding: 40px 20px 40px 20px;
+
+        margin-top: 20px;
+
+        .directrice {
+            width: 100%;
+            max-width: 150px;
+            min-width: 100px;
+            margin-bottom: 20px;;
+        }
+
+        .bloc-text {
+            color: $color-dark-blue;
+
+            .une-question {
+                font-size: 25px;
+                text-transform: uppercase;
+                line-height: 1.1;
+                margin-bottom: 10px;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+
+            .nom {
+                font-size: 20px;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+
+            .email {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+
+            .tel {
+                font-size: 20px;
+            }
+
+            @media (max-width: 991.98px) {
+                .email {
+                    font-size: 14px;
+                }
+                .tel {
+                    font-size: 14px;
+                }
+            }
+
+            .picto {
+                margin-right: 10px;
+                position: relative;
+                top: -1px;
+            }
+        }
+    }
+}

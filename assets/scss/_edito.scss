@@ -1,0 +1,106 @@
+.edito {
+    padding: 20px;
+    
+    .quote-container {
+        position: relative;
+        display: inline-block;
+        
+        .guillemet-left {
+            top: -112px;
+            left: -48px;
+            position: absolute;
+        }
+        
+        .guillemet-right
+        {
+            bottom: -30px;
+            right: -22px;
+            position: absolute;
+        }
+        
+        .donnez-nous {
+            font-size: 30px;
+            color: $color-dark-blue;
+            max-width: 485px;
+            line-height: 1;
+            
+            .plus {
+                color: $color-urgency;
+            }
+        }
+        
+        .president-titre {
+            color: $color-dark-blue;
+            font-size: 14px; 
+            width: 100%;
+            
+            .nom {
+                font-weight: bold;
+            }
+        }
+    }
+    
+    .button-cross {
+        width: 50px;
+        height: 32px;
+        background-color: $color-urgency;
+        border: none;
+        border-radius: 20px;
+        position: relative;
+        outline: none;
+
+        &[aria-expanded="true"] {
+            margin-top: 15px;
+
+            &:before, &:after {
+                height: 25px;
+                width: 3px;
+                background-color: $white;
+                border-radius: 3px;
+            }
+            
+            &:before {
+                transform: rotate(90deg);
+            }
+            &:after {
+                transform: rotate(90deg);
+            }
+        }
+        
+        &:before, &:after {
+            position: absolute;
+            left: 24px;
+            top: 4px;
+            content: ' ';
+            height: 25px;
+            width: 2px;
+            background-color: $white;
+            border-radius: 3px;
+        }
+        
+        &:before {
+            transform: rotate(0deg);
+        }
+        &:after {
+            transform: rotate(90deg);
+        }
+    }
+
+    .edito-text-container {
+        // height: auto;
+        // max-height: 0px;
+        // overflow: hidden;
+        //transition: max-height $transitionTime ease-in-out;
+        max-width: 470px;
+
+        .paragraph {
+            color: $color-dark-blue;
+            font-size: 20px;
+        }
+
+        .savez-vous {
+            color: $color-urgency;
+            font-size: 30px;
+        }
+    }
+}

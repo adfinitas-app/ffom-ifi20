@@ -1,0 +1,52 @@
+//Colors
+$color-urgency: #E2001A;
+$color-dark-blue: #354253;
+$color-very-light-grey: rgba(53, 66, 83, 0.05);
+$color-light-grey: rgba(53, 66, 83, 0.1);
+$color-grey: rgba(53, 66, 83, 0.5);
+
+//Font
+$defaultFont: 'Roboto Condensed', sans-serif;
+
+//Navbar
+$navBarHeight: 90px;
+
+$transitionTime: 0.4s;
+
+body {
+  font-family: $defaultFont;
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+//Font size
+$font-sizes: () !default;
+$font-sizes: map-merge(
+(
+"10": 10px !important,
+"14": 14px !important,
+"16": 16px !important,
+"17": 17px !important,
+"18": 18px !important,
+"20": 20px !important,
+"22": 22px !important,
+"24": 24px !important,
+"26": 26px !important,
+"28": 28px !important,
+"30": 30px !important,
+),
+$font-sizes
+);
+
+@each $size, $value in $font-sizes {
+  .fs-#{$size} {
+    font-size: $value;
+  }
+}
+
+.br {
+  font-size: 0px;
+}

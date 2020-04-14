@@ -1,0 +1,1 @@
+$(document).ready((function(){$('.calendar [data-toggle="tooltip"]').tooltip(),$(".declaration-type-item").hover((function(){$(this).addClass("active"),$(this).siblings(".declaration-type-item").removeClass("active");const t=$(this).data("target");console.log($(t)),$(t).siblings(".declaration-type-content").hide(),$(t).show()}),(function(){}))}));

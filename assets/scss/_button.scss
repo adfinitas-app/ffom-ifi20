@@ -1,0 +1,58 @@
+.button-don {
+	outline: 2px solid $color-urgency;
+	border: 2px solid $white;
+	background-color: $color-urgency;
+	padding: 7px 34px;
+	position: relative;
+	max-height: 42px;
+	
+	.cross {  
+		position: absolute;
+		top: 15px;
+		left: 20px;
+	}
+	
+	.text {
+		color: $white;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-family: $defaultFont;
+		font-weight: bold;
+	}
+	
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.button-don-virement {
+	outline: none;
+	border: none;
+	background-color: #eaeced;
+	padding: 7px 34px;
+	max-height: 42px;
+	
+	.text {
+		color: $color-dark-blue;
+		text-transform: uppercase;
+		font-size: 15px;
+		font-family: $defaultFont;
+	}
+	
+	&:hover {
+		text-decoration: none;
+		color: $color-dark-blue;
+	}
+}
+
+.button-don-cheque {
+	color: $color-dark-blue;
+	font-size: 14px;
+	
+	&:hover {
+		//text-decoration: none;
+		color: $color-dark-blue;
+	}
+}
+

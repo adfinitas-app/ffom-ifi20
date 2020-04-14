@@ -1,0 +1,59 @@
+header {
+    min-height: 100vh;
+    background: url('../img/header-bg.png') -4px 0px no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &.navSticky {
+        padding-top: $navBarHeight;
+    }
+
+    .plus {
+        font-size: 110px;
+        color: $white;
+        text-transform: uppercase;
+        position: absolute;
+        left: 59%;
+        top: 23%;
+        z-index: 2;
+        line-height: 0.8;
+
+        .force {
+            font-size: 112px;
+            font-weight: bold;
+        }
+    }
+
+    .header-plus-img {
+        position: absolute;
+        z-index: 0;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .donnez {
+        color: $white;
+        font-size: 34px;
+        text-transform: uppercase;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+        z-index: 2;
+    }
+
+    .pour-prendre-container {
+        color: $white;
+        text-transform: uppercase;
+        position: absolute;
+        left: 59%;
+        top: 61%;
+        z-index: 2;
+        display: inline-block;
+        max-width: 400px;
+
+        span {
+            font-size: 22px;
+        }
+    }
+}
