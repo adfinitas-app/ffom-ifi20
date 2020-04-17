@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.calendar [data-toggle="tooltip"]').tooltip();
 
-    $('.declaration-type-item').hover(function() {
+    $('.declaration-type-item').on('click', function() {
         $(this).addClass('active');
         $(this).siblings('.declaration-type-item').removeClass('active');
 
@@ -11,7 +11,5 @@ $(document).ready(function() {
 
         $(target).siblings('.declaration-type-content').hide();
         $(target).show();
-    }, function() {
-
     });
 });

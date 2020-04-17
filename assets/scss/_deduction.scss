@@ -46,61 +46,72 @@
         }
     }
 
-    .circle-background {
-        width: 210px;
-        height: 201px;
-        background-image: url('../img/circle.png');
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        position: relative;
-        margin: 0 auto;
+    .circle-wrapper {
+        display: none;
 
-        .inside {
+        .circle-background {
+            width: 210px;
+            height: 201px;
+            background-image: url('../img/circle.png');
+            background-repeat: no-repeat;
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-direction: column;
-            max-width: 100px;
-            color: $color-dark-blue;
-            
-            .text {
-                font-size: 16px;
-                line-height: 1.0;
-                margin-bottom: 4px;
-            }
-
-            .amount-center {
-                font-weight: bold;
-                font-size: 25px;
-
-                &.amount-last {
-                    background-color: $color-light-grey;
-                    border-radius: 2px;
+            position: relative;
+            margin: 0 auto;
+    
+            .inside {
+                display: flex;
+                flex-direction: column;
+                max-width: 100px;
+                color: $color-dark-blue;
+                
+                .text {
+                    font-size: 16px;
+                    line-height: 1.0;
+                    margin-bottom: 4px;
+                }
+    
+                .amount-center {
+                    font-weight: bold;
+                    font-size: 25px;
+    
+                    .free-amount {
+                        color: $color-dark-blue;
+                        font-weight: bold;
+                        font-size: 25px;
+                        width: 100%;
+                        border: none;
+                        background-color: $color-light-grey;
+                        border-radius: 2px;
+                        display: inline-block;
+                        text-align: center;
+                    }
                 }
             }
-        }
-
-        .amount-left-bottom {
-            position: absolute;
-            left: -35px;
-            bottom: 8px;
-            color: $color-grey;
-            font-size: 20px;
-            font-weight: bold;
-            width: 66px;
-            text-align: right;
-        }
-
-        .amount-right-top {
-            position: absolute;
-            right: -46px;
-            top: 12px;
-            color: $color-urgency;
-            font-size: 20px;
-            font-weight: bold;
-            width: 66px;
-            text-align: left;
+    
+            .amount-left-bottom {
+                position: absolute;
+                left: -35px;
+                bottom: 8px;
+                color: $color-grey;
+                font-size: 20px;
+                font-weight: bold;
+                width: 66px;
+                text-align: right;
+            }
+    
+            .amount-right-top {
+                position: absolute;
+                right: -46px;
+                top: 12px;
+                color: $color-urgency;
+                font-size: 20px;
+                font-weight: bold;
+                width: 66px;
+                text-align: left;
+            }
         }
     }
 }

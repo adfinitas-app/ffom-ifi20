@@ -1,26 +1,34 @@
 .bandeau-covid {
-    min-height: 60px;
-    background-color: $color-urgency;
-    color: $white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
+	min-height: 60px;
+	background-color: $color-urgency;
+	color: $white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+	-moz-box-shadow: inset 0 -10px 10px -10px #000000;
+	-webkit-box-shadow: inset 0 -10px 10px -10px #000000;
+	box-shadow: inset 0 -10px 10px -10px #000000;
 
-    p {
+	p {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
-        span.covid {
-            font-weight: bold;
-            margin: 0 5px;
-        }
+		span.covid {
+			font-weight: bold;
+			margin: 0 5px;
+		}
 
-        span.exclamation {
-            font-weight: bold;
-            border: 3px solid $white;
-            border-radius: 50%;
-            display: inline-block;
-            width: 30px;
-            height: 30px;
-        }
-    }
+		span.exclamation {
+			font-weight: bold;
+			border: 2px solid $white;
+			border-radius: 50%;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			font-size: 10px;
+			margin: auto 0;
+		}
+	}
 }

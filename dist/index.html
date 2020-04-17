@@ -1,418 +1,695 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEV</title>
-    
-    <!-- CSS -->
-    <!-- styles.css is compiled by gulp-sass -->
-    <link rel="stylesheet" href="./assets/css/styles.min.css"/>
-    <!-- CSS -->
-</head>
-<body>
-    
-    <!-- --------------------------------------------------------------- -->
-    <!-- BANDEAU COVID -->
-    <div class="bandeau-covid">
-        <p class="text-center fs-17">
-            <span class="exclamation">!</span>
-            <span class="covid">COVID-19</span>
-            Plus que jamais, pour maintenir nos missions et répondre à toutes les fragilités, nous avons besoin de votre aide. Soutenez-nous.
-        </p>
-    </div>
-    <!-- BANDEAU COVID -->
-    <!-- --------------------------------------------------------------- -->
-    <!-- HEADER DESKTOP -->
-    <header class="d-none d-md-block">
-        <!-- NAV DESKTOP-->
-        <nav>
-            <a href="#">
-                <img src="assets/img/logo.png" alt="logo">
-            </a>
-            <div class="links">
-                <a href="#" class="link"><span>En france</span></a>
-                <a href="#" class="link"><span>En Syrie</span></a>
-                <a href="#" class="link"><span>En Palestine</span></a>
-            </div>
-            <a href="#" target="_blank" class="d-block button-don">
-                <img src="assets/img/picto/croix.png" alt="+" class="cross" />
-                <span class="text">Je fais un don IFI</span>
-            </a>
-        </nav>
-        <!-- NAV DESKTOP -->
-        
-        <img src="assets/img/header-plus-palestin.png" class="header-plus-img palestin" />
-        <span class="donnez">Donnez-nous</span>
-        <span class="plus">+ de<br><span class="force">forces</span></span>
-        
-        <div class="pour-prendre-container">
-            <span class="pour-prendre">Pour prendre soin des plus fragiles</span>
-            <a href="#" target="_blank" class="d-inline-block button-don mt-1">
-                <img src="assets/img/picto/croix.png" alt="+" class="cross" />
-                <span class="text fs-14">Je fais un don IFI</span>
-            </a>
-        </div>
-    </header>
-    <!-- HEADER -->
-    <!-- --------------------------------------------------------------- -->
-    <!-- EDITO -->
-    <section class="edito">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-4 col-lg-4 text-center">
-                    <img class="mb-sm-3 mb-md-0" src="assets/img/president.png" alt="Président"/>
-                </div>
-                <div class="col-sm-12 col-md-8 col-lg-8">
-                    <div class="quote-container">
-                        <img class="guillemet-left" src="assets/img/picto/guillemet.png" alt='"' />
-                        <img class="guillemet-right" src="assets/img/picto/guillemet.png" alt='"' />
-                        <span class="donnez-nous">
-                            Donnez-nous <span class="plus">+</span> de forces pour sauver<br class="d-none d-md-block">
-                            <span class="plus">+</span> de vies…tout en réduisant vos impôts.
-                        </span>
-                        <p class="president-titre mt-2 mb-4"><span class="nom">Jean-Pierre Mazery,</span> Président de la Fondation Française de l’Ordre de Malte</p>
-                    </div>
-                    <div class="text-left w-100">
-                        <div id="edito-text-container" class="edito-text-container collapse">
-                            <p class="paragraph">
-                                La pandémie de Covid-19 à laquelle notre monde est confronté révèle avec gravité combien la mission originelle de l’Ordre de Malte est plus que jamais d’actualité.
-                                <br><br>
-                                Depuis près d’un millénaire, notre vocation « hospitalière » est d’aller au-devant de la personne atteinte par la maladie, la pauvreté ou l’exclusion, pour l’accueillir et la soigner dans toute sa dignité…
-                                <br><br>
-                                Partout où les besoins sont criants, nous répondons présents ! Nos milliers de bénévoles, de médecins et d’aides soignants sont mobilisés et déterminés à sauver des vies et soulager des souffrances. Mais sans moyens, ils ne peuvent rien.
-                                <br><br>
-                                Actuellement, sur le terrain, plusieurs programmes d’action constituent de réelles priorités de financement. Il s’agit notamment :
-                            </p>
-                            <ul class="paragraph">
-                                <li>de renforcer les maraudes médicalisées auprès des sans abri en France</li>
-                                <li>de secourir les survivants des massacres en Syrie</li>
-                                <li>de sécuriser l’activité de l’hôpital de la Sainte Famille à Bethléem pour protéger la vie des futures mères et des prématurés.
-                                </li>
-                            </ul>
-                            
-                            <h1 class="savez-vous">Savez-vous qu’avec un don, vous pouvez rendre possible la mise en œuvre de ces projets essentiels, tout en bénéficiant d’importantes déductions d’impôts ?</h1>
-                            
-                            <p class="paragraph">
-                                Reconnue d’utilité publique, la Fondation Française de l’Ordre de Malte vous permet, si vous êtes redevable de l’Impôt sur la Fortune Immobilière (IFI), de déduire  de votre impôt 75 % du montant de votre don. Et il vous est également possible de choisir la déduction de 66 % du montant de votre don de l’Impôt sur le Rrevenu (IR).
-                                <br><br>
-                                Je vous remercie d’avance de saisir cette opportunité fiscale pour faire vivre vos valeurs et nous donner + de forces pour prendre soin des + fragiles.
-                                <br><br>                            
-                                Recevez mes pensées chaleureuses, et prenez soin de vous.
-                            </p>
-                        </div>
-                        <button type="button" class="button-cross" data-toggle="collapse" data-target="#edito-text-container" aria-expanded="false" aria-controls="edito-text-container"></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="d-none flex-row flex-wrap justify-content-center align-items-center">
-            <div class="col-left">
-                <img src="assets/img/president.png" alt="Président"/>
-            </div>
-            <div class="col-right">
-                <div class="quote-container">
-                    <img class="guillemet-left" src="assets/img/picto/guillemet.png" alt='"' />
-                    <img class="guillemet-right" src="assets/img/picto/guillemet.png" alt='"' />
-                    <span class="donnez-nous">
-                        Donnez-nous <span class="plus">+</span> de forces pour sauver<br class="d-none d-md-block">
-                        <span class="plus">+</span> de vies…tout en réduisant vos impôts.
-                    </span>
-                    <p class="president-titre"><span class="nom">Jean-Pierre Mazery,</span> Président de la Fondation Française de l’Ordre de Malte</p>
-                </div>
-                <div class="position-relative text-left w-100 mt-3">
-                    <div id="edito-text-container" class="d-none">
-                        <p class="paragraph">
-                            La pandémie de Covid-19 à laquelle notre monde est confronté révèle avec gravité combien la mission originelle de l’Ordre de Malte est plus que jamais d’actualité.
-                            <br><br>
-                            Depuis près d’un millénaire, notre vocation « hospitalière » est d’aller au-devant de la personne atteinte par la maladie, la pauvreté ou l’exclusion, pour l’accueillir et la soigner dans toute sa dignité…
-                            <br><br>
-                            Partout où les besoins sont criants, nous répondons présents ! Nos milliers de bénévoles, de médecins et d’aides soignants sont mobilisés et déterminés à sauver des vies et soulager des souffrances. Mais sans moyens, ils ne peuvent rien.
-                            <br><br>
-                            Actuellement, sur le terrain, plusieurs programmes d’action constituent de réelles priorités de financement. Il s’agit notamment :
-                        </p>
-                        <ul class="paragraph">
-                            <li>de renforcer les maraudes médicalisées auprès des sans abri en France</li>
-                            <li>de secourir les survivants des massacres en Syrie</li>
-                            <li>de sécuriser l’activité de l’hôpital de la Sainte Famille à Bethléem pour protéger la vie des futures mères et des prématurés.
-                            </li>
-                        </ul>
-                        
-                        <h1 class="savez-vous">Savez-vous qu’avec un don, vous pouvez rendre possible la mise en œuvre de ces projets essentiels, tout en bénéficiant d’importantes déductions d’impôts ?</h1>
-                        
-                        <p class="paragraph">
-                            Reconnue d’utilité publique, la Fondation Française de l’Ordre de Malte vous permet, si vous êtes redevable de l’Impôt sur la Fortune Immobilière (IFI), de déduire  de votre impôt 75 % du montant de votre don. Et il vous est également possible de choisir la déduction de 66 % du montant de votre don de l’Impôt sur le Rrevenu (IR).
-                            <br><br>
-                            Je vous remercie d’avance de saisir cette opportunité fiscale pour faire vivre vos valeurs et nous donner + de forces pour prendre soin des + fragiles.
-                            <br><br>                            
-                            Recevez mes pensées chaleureuses, et prenez soin de vous.
-                        </p>
-                    </div>
-                    <button class="button-cross click-to-expand" data-target="#edito-text-container"></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- EDITO -->
-    <!-- --------------------------------------------------------------- -->
-    <!-- DEFISCALISATION -->
-    <div class="gradient"></div>
-    <section class="defiscalisation">
-        <img class="plus d-none d-md-block" src="assets/img/defiscalisation-plus.png" alt=""/>
-        <p class="title text-center"><span class="my-border"><span class="red">Défiscalisez</span> votre don,<br class="d-none d-md-block br" /> pour prendre soins des plus fragiles</span></p>
-        
-        <div class="d-flex flex-row align-items-center justify-content-center">
-            <div class="don-type-item active" data-target="#don-type-ifi" data-toggle="tooltip" data-placement="bottom" title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?">
-                <span>IFI</span>
-            </div>
-            <div class="don-type-item" data-target="#don-type-ir" data-toggle="tooltip" data-placement="bottom" title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?">
-                <span>IR</span>
-            </div>
-            <div class="don-type-item" data-target="#don-type-is" data-toggle="tooltip" data-placement="bottom" title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?">
-                <span>IS</span>
-            </div>
-        </div>
-        
-        <!-- DON TYPE CONTENT IFI -->
-        <div class="don-type-content" id="don-type-ifi">
-            <div class="d-flex flex-row flex-wrap justify-content-center align-items-start">
-                <span class="percent">75%</span>
-                <span class="limit">du montant de mon don à la Fondation sont déductibles de cet impôt, dans la limite de 50 000 € par an.</span>
-            </div>
-            <div class="text-center d-flex flex-column justify-content-center align-items-center">
-                <div style="max-width: 350px;">
-                    <a href="#" target="_blank" class="d-block button-don mt-4">
-                        <img src="assets/img/picto/croix.png" alt="+" class="cross" />
-                        <span class="text fs-20">Je fais un don IFI en ligne</span>
-                    </a>
-                    <a href="#" target="_blank" class="d-block button-don-virement mt-3">
-                        <span class="text">Je fais un don par virement bancaire</span>
-                    </a>
-                    <a href="#" target="_blank" class="d-block button-don-cheque mt-3">Je n’ai pas d’autres moyens de paiement, je&nbsp;fais&nbsp;un&nbsp;don&nbsp;par&nbsp;chèque</a>
-                </div>
-            </div>
-        </div>
-        <!-- DON TYPE CONTENT IFI -->
-        
-        <!-- DON TYPE CONTENT IR -->
-        <div class="don-type-content hidden" id="don-type-ir">
-            <div class="d-flex flex-row flex-wrap justify-content-center align-items-start">
-                <span class="percent">66%</span>
-                <span class="limit">du montant de mon don à la Fondation sont déductibles de l’Impôt sur le revenu, dans la limite de 20% du revenu net imposable.</span>
-            </div>
-            <div class="text-center d-flex flex-column justify-content-center align-items-center">
-                <div style="max-width: 350px;width: 100%;">
-                    <a href="#" target="_blank" class="d-block button-don mt-4">
-                        <img src="assets/img/picto/croix.png" alt="+" class="cross" />
-                        <span class="text fs-20">Je fais un don IR en ligne</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- DON TYPE CONTENT IR -->
-        
-        <!-- DON TYPE CONTENT IS -->
-        <div class="don-type-content hidden" id="don-type-is">
-            <div class="d-flex flex-row flex-wrap justify-content-center align-items-start">
-                <span class="percent">60%</span>
-                <span class="limit">du montant de mon don à la Fondation, au titre du mécénat, sont déductibles de cet impôt, dans la limite de 20 000€ ou de 0,5% du chiffre d’affaires hors taxes (au choix).</span>
-            </div>
-            <div class="text-center d-flex flex-column justify-content-center align-items-center">
-                <div style="max-width: 350px;width: 100%;">
-                    <a href="#" target="_blank" class="d-block button-don mt-4">
-                        <img src="assets/img/picto/croix.png" alt="+" class="cross" />
-                        <span class="text fs-20">Je fais un don en ligne</span>
-                    </a>
-                    <a href="#" target="_blank" class="d-block button-don-virement mt-3">
-                        <span class="text">Je fais un don par virement bancaire</span>
-                    </a>
-                    <a href="#" target="_blank" class="d-block button-don-cheque mt-3">Je n’ai pas d’autres moyens de paiement, je&nbsp;fais&nbsp;un&nbsp;don&nbsp;par&nbsp;chèque</a>
-                </div>
-            </div>
-        </div>
-        <!-- DON TYPE CONTENT IS -->
-        
-    </section>
-    <!-- DEFISCALISATION -->
-    <!-- --------------------------------------------------------------- -->
-    <!-- DEDUCTION -->
-    <section class="deduction">
-        <img class="plus d-none d-md-block" src="assets/img/deduction-plus.png" alt=""/>
-        <p class="title text-center"><span class="my-border">Exemples de <span class="red">déductions</span> fiscales</span></p>
-        <div class="d-flex flex-row flex-wrap justify-content-sm-start justify-content-md-center">
-            <p class="mx-2 mx-md-5 my-2 red"><span class="square red mr-2"></span>Montant après déduction</p>
-            <p class="mx-2 mx-md-5 my-2 grey"><span class="square grey mr-2"></span>Déduction fiscale</p>
-        </div>
-        <!-- CIRCLES -->
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4 text-center circle-left">
-                    <div class="circle-background">
-                        <span class="inside">
-                            <span class="text">Montant de votre don</span>
-                            <span class="amount-center">1 000€</span>
-                        </span>
-                        <span class="amount-left-bottom">750€</span>
-                        <span class="amount-right-top">250€&nbsp;&nbsp;</span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 text-center circle-middle">
-                    <div class="circle-background">
-                        <span class="inside">
-                            <span class="text">Montant de votre don</span>
-                            <span class="amount-center">5 000€</span>
-                        </span>
-                        <span class="amount-left-bottom">750€</span>
-                        <span class="amount-right-top">1 000€</span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-4 text-center circle-right">
-                    <div class="circle-background">
-                        <span class="inside">
-                            <span class="text">Montant de votre don</span>
-                            <span class="amount-center amount-last">10 000€</span>
-                        </span>
-                        <span class="amount-left-bottom">7 500€</span>
-                        <span class="amount-right-top">2 500€</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- CIRCLES -->
-    </section>
-    <!-- DEDUCTION -->
-    <!-- --------------------------------------------------------------- -->
-    <!-- CALENDAR -->
-    <section class="calendar">
-        <p class="title text-center"><span class="my-border">Votre <span class="red">calendrier</span> fiscal 2020</span></p>
-        <div class="d-flex flex-column mx-auto" style="max-width: 550px;">
-            <p class="votre-decla">Votre déclaration d’IFI est à effectuer en même temps et dans les mêmes délais que votre déclaration d’Impôt sur le Revenu.</p>
-            <p class="en-raison">En raison de l’épidémie de Covid19 et des mesures  de confinement corrélatives, la campagne de  déclaration d’impôt pourrait être modifiée  en profondeur et les dates limites de déclaration reportées.</p>
-        </div>
-        <p class="date-limite">Dates limites de déclaration :</p>
-        <div class="d-flex flex-row flex-wrap justify-content-center">
-            <p class="mx-2 mx-md-5 my-2 declaration-type-item active" data-target="#declaration-type-online">
-                <img class="picto en-ligne" src="assets/img/en-ligne.png" alt="" />En ligne
-            </p>
-            <p class="mx-2 mx-md-5 my-2 declaration-type-item" data-target="#declaration-type-paper">
-                <img class="picto en-papier" src="assets/img/en-papier.png" alt="" />Papier
-            </p>
-        </div>
-        
-        <!-- Declaration type online -->
-        <div id="declaration-type-online" class="declaration-type-content">
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="bloc-date">
-                            <span class="jour">Jeudi</span>
-                            <span class="date">4 Juin</span>
-                            <span class="avant">avant minuit</span>
-                            <span class="zone">Zone 1</span>
-                            <img class="interrogation" src="assets/img/picto/interrogation.png" data-toggle="tooltip" data-placement="bottom" title="(départements 1 à 19), Monaco et non-résidents"/>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4">
-                        <div class="bloc-date">
-                            <span class="jour">Lundi</span>
-                            <span class="date">8 Juin</span>
-                            <span class="avant">avant minuit</span>
-                            <span class="zone">Zone 1</span>
-                            <img class="interrogation" src="assets/img/picto/interrogation.png" data-toggle="tooltip" data-placement="bottom" title="(départements 1 à 19), Monaco et non-résidents"/>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-4">
-                        <div class="bloc-date">
-                            <span class="jour">Jeudi</span>
-                            <span class="date">11 Juin</span>
-                            <span class="avant">avant minuit</span>
-                            <span class="zone">Zone 1</span>
-                            <img class="interrogation" src="assets/img/picto/interrogation.png" data-toggle="tooltip" data-placement="bottom" title="(départements 1 à 19), Monaco et non-résidents"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Declaration type online -->
-        <!-- Declaration type paper -->
-        <div id="declaration-type-paper" class="declaration-type-content hidden">
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col-sm-12">
-                        <div class="bloc-date">
-                            <span class="jour">Vendredi</span>
-                            <span class="date">12 Juin</span>
-                            <span class="avant">avant minuit</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Declaration type paper -->
-    </section>
-    <!-- CALENDAR -->
-    <!-- --------------------------------------------------------------- -->
-    <!-- CONTACT -->
-    <section class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-8 col-lg-7">
-                    
-                    <div class="bloc-contact">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-4 col-lg-4 text-center">
-                                <img class="directrice" src="assets/img/directrice.png"/>
-                            </div>
-                            <div class="col-sm-12 col-md-8 col-lg-8">
-                                <div class="bloc-text">
-                                    <p class="une-question"><span>Une question ?</span> Contactez votre contact personnel</p>
-                                    <p class="nom">Dominique Jan-Nassé, Directrice de la Fondation, est à votre à votre disposition</p>
-                                    <p class="email"><img class="picto" alt="" src="assets/img/picto/message.png" />d.jan@ordredemaltefrance.org</p>
-                                    <p class="tel"><img class="picto" alt="" src="assets/img/picto/tel.png" />+33 1 55 74 53 41 </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-5">
-                    <div class="bloc-contact">
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="bloc-text">
-                                    <p class="une-question mb-4">Vous souhaitez <br><span>en savoir plus ?</span></p>
-                                    <div class="d-flex flex-row align-items-center">
-                                        <img class="mr-2" src="assets/img/download.png" style="width: 35px; height: 40px;"/>
-                                        <p>Je télécharge la documentation complète sur les actions de la Fondation</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DEV</title>
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- CONTACT -->
-    <!-- --------------------------------------------------------------- -->
-    <!-- FOOTER -->
-    <footer>
-        
-    </footer>
-    <!-- FOOTER -->
-    
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
-    <script type="application/javascript" src="assets/js/sticky.js"></script>
-    <script type="application/javascript" src="assets/js/click-to-expand.js"></script>
-    <script type="application/javascript" src="assets/js/defiscalisation.js"></script>
-    <script type="application/javascript" src="assets/js/calendar.js"></script>
-    
-    <!-- JS -->
-</body>
+		<!-- CSS -->
+		<!-- styles.css is compiled by gulp-sass -->
+		<link rel="stylesheet" href="./assets/css/styles.min.css" />
+		<!-- CSS -->
+	</head>
+	<body>
+		<!-- --------------------------------------------------------------- -->
+		<!-- BANDEAU COVID -->
+		<div class="bandeau-covid">
+			<p class="text-center fs-17">
+				<span class="exclamation">!</span>
+				<span class="covid">COVID-19</span>
+				Plus que jamais, pour maintenir nos missions et répondre à toutes les
+				fragilités, nous avons besoin de votre aide. Soutenez-nous.
+			</p>
+		</div>
+		<!-- BANDEAU COVID -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- HEADER DESKTOP -->
+		<header class="d-none d-md-block">
+			<!-- NAV DESKTOP-->
+			<nav>
+				<a href="#">
+					<img src="assets/img/logo.png" alt="logo" />
+				</a>
+				<div class="links">
+					<a href="#" class="link"><span>En france</span></a>
+					<a href="#" class="link"><span>En Syrie</span></a>
+					<a href="#" class="link"><span>En Palestine</span></a>
+				</div>
+				<a href="#" target="_blank" class="d-block button-don">
+					<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+					<span class="text">Je fais un don IFI</span>
+				</a>
+			</nav>
+			<!-- NAV DESKTOP -->
+
+			<img
+				src="assets/img/header-plus-palestin.png"
+				class="header-plus-img palestin battement"
+			/>
+			<span class="donnez">Donnez-nous</span>
+			<span class="plus"
+				><img src="assets/img/plus.png" alt="+" />de<br /><span class="force"
+					>forces</span
+				></span
+			>
+
+			<div class="pour-prendre-container">
+				<span class="pour-prendre">Pour prendre soin des plus fragiles</span>
+				<a href="#" target="_blank" class="d-inline-block button-don mt-1">
+					<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+					<span class="text fs-14">Je fais un don IFI</span>
+				</a>
+			</div>
+		</header>
+		<!-- HEADER -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- EDITO -->
+		<section class="edito">
+			<div class="container py-5">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-4 text-center text-md-right">
+						<img
+							class="mb-sm-3 mb-md-0"
+							src="assets/img/president.png"
+							alt="Président"
+						/>
+					</div>
+					<div class="col-sm-12 col-md-8 col-lg-8">
+						<div class="quote-container">
+							<img
+								class="guillemet-left"
+								src="assets/img/picto/guillemet.png"
+								alt='"'
+							/>
+							<img
+								class="guillemet-right"
+								src="assets/img/picto/guillemet.png"
+								alt='"'
+							/>
+							<span class="donnez-nous">
+								Donnez-nous <span class="plus">+</span> de forces pour sauver<br
+									class="d-none d-md-block"
+								/>
+								<span class="plus">+</span> de vies…tout en réduisant vos
+								impôts.
+							</span>
+							<p class="president-titre mt-2 mb-4">
+								<span class="nom">Jean-Pierre Mazery,</span> Président de la
+								Fondation Française de l’Ordre de Malte
+							</p>
+						</div>
+						<div class="text-left w-100">
+							<div
+								id="edito-text-container"
+								class="edito-text-container collapse"
+							>
+								<p class="paragraph">
+									La pandémie de Covid-19 à laquelle notre monde est confronté
+									révèle avec gravité combien la mission originelle de l’Ordre
+									de Malte est plus que jamais d’actualité.
+									<br /><br />
+									Depuis près d’un millénaire, notre vocation « hospitalière »
+									est d’aller au-devant de la personne atteinte par la maladie,
+									la pauvreté ou l’exclusion, pour l’accueillir et la soigner
+									dans toute sa dignité…
+									<br /><br />
+									Partout où les besoins sont criants, nous répondons présents !
+									Nos milliers de bénévoles, de médecins et d’aides soignants
+									sont mobilisés et déterminés à sauver des vies et soulager des
+									souffrances. Mais sans moyens, ils ne peuvent rien.
+									<br /><br />
+									Actuellement, sur le terrain, plusieurs programmes d’action
+									constituent de réelles priorités de financement. Il s’agit
+									notamment :
+								</p>
+								<ul class="paragraph">
+									<li>
+										de renforcer les maraudes médicalisées auprès des sans abri
+										en France
+									</li>
+									<li>de secourir les survivants des massacres en Syrie</li>
+									<li>
+										de sécuriser l’activité de l’hôpital de la Sainte Famille à
+										Bethléem pour protéger la vie des futures mères et des
+										prématurés.
+									</li>
+								</ul>
+
+								<h1 class="savez-vous">
+									Savez-vous qu’avec un don, vous pouvez rendre possible la mise
+									en œuvre de ces projets essentiels, tout en bénéficiant
+									d’importantes déductions d’impôts ?
+								</h1>
+
+								<p class="paragraph">
+									Reconnue d’utilité publique, la Fondation Française de l’Ordre
+									de Malte vous permet, si vous êtes redevable de l’Impôt sur la
+									Fortune Immobilière (IFI), de déduire de votre impôt 75 % du
+									montant de votre don. Et il vous est également possible de
+									choisir la déduction de 66 % du montant de votre don de
+									l’Impôt sur le Rrevenu (IR).
+									<br /><br />
+									Je vous remercie d’avance de saisir cette opportunité fiscale
+									pour faire vivre vos valeurs et nous donner + de forces pour
+									prendre soin des + fragiles.
+									<br /><br />
+									Recevez mes pensées chaleureuses, et prenez soin de vous.
+								</p>
+							</div>
+							<button
+								type="button"
+								class="button-cross"
+								data-toggle="collapse"
+								data-target="#edito-text-container"
+								aria-expanded="false"
+								aria-controls="edito-text-container"
+							></button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="d-none flex-row flex-wrap justify-content-center align-items-center"
+			>
+				<div class="col-left">
+					<img src="assets/img/president.png" alt="Président" />
+				</div>
+				<div class="col-right">
+					<div class="quote-container">
+						<img
+							class="guillemet-left"
+							src="assets/img/picto/guillemet.png"
+							alt='"'
+						/>
+						<img
+							class="guillemet-right"
+							src="assets/img/picto/guillemet.png"
+							alt='"'
+						/>
+						<span class="donnez-nous">
+							Donnez-nous <span class="plus">+</span> de forces pour sauver<br
+								class="d-none d-md-block"
+							/>
+							<span class="plus">+</span> de vies…tout en réduisant vos impôts.
+						</span>
+						<p class="president-titre">
+							<span class="nom">Jean-Pierre Mazery,</span> Président de la
+							Fondation Française de l’Ordre de Malte
+						</p>
+					</div>
+					<div class="position-relative text-left w-100 mt-3">
+						<div id="edito-text-container" class="d-none">
+							<p class="paragraph">
+								La pandémie de Covid-19 à laquelle notre monde est confronté
+								révèle avec gravité combien la mission originelle de l’Ordre de
+								Malte est plus que jamais d’actualité.
+								<br /><br />
+								Depuis près d’un millénaire, notre vocation « hospitalière » est
+								d’aller au-devant de la personne atteinte par la maladie, la
+								pauvreté ou l’exclusion, pour l’accueillir et la soigner dans
+								toute sa dignité…
+								<br /><br />
+								Partout où les besoins sont criants, nous répondons présents !
+								Nos milliers de bénévoles, de médecins et d’aides soignants sont
+								mobilisés et déterminés à sauver des vies et soulager des
+								souffrances. Mais sans moyens, ils ne peuvent rien.
+								<br /><br />
+								Actuellement, sur le terrain, plusieurs programmes d’action
+								constituent de réelles priorités de financement. Il s’agit
+								notamment :
+							</p>
+							<ul class="paragraph">
+								<li>
+									de renforcer les maraudes médicalisées auprès des sans abri en
+									France
+								</li>
+								<li>de secourir les survivants des massacres en Syrie</li>
+								<li>
+									de sécuriser l’activité de l’hôpital de la Sainte Famille à
+									Bethléem pour protéger la vie des futures mères et des
+									prématurés.
+								</li>
+							</ul>
+
+							<h1 class="savez-vous">
+								Savez-vous qu’avec un don, vous pouvez rendre possible la mise
+								en œuvre de ces projets essentiels, tout en bénéficiant
+								d’importantes déductions d’impôts ?
+							</h1>
+
+							<p class="paragraph">
+								Reconnue d’utilité publique, la Fondation Française de l’Ordre
+								de Malte vous permet, si vous êtes redevable de l’Impôt sur la
+								Fortune Immobilière (IFI), de déduire de votre impôt 75 % du
+								montant de votre don. Et il vous est également possible de
+								choisir la déduction de 66 % du montant de votre don de l’Impôt
+								sur le Rrevenu (IR).
+								<br /><br />
+								Je vous remercie d’avance de saisir cette opportunité fiscale
+								pour faire vivre vos valeurs et nous donner + de forces pour
+								prendre soin des + fragiles.
+								<br /><br />
+								Recevez mes pensées chaleureuses, et prenez soin de vous.
+							</p>
+						</div>
+						<button
+							class="button-cross click-to-expand"
+							data-target="#edito-text-container"
+						></button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- EDITO -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- DEFISCALISATION -->
+		<div class="gradient"></div>
+		<section class="defiscalisation">
+			<img
+				class="plus d-none d-md-block"
+				src="assets/img/defiscalisation-plus.png"
+				alt=""
+			/>
+			<p class="title text-center">
+				<span class="my-border"
+					><span class="red">Défiscalisez</span> votre don,<br
+						class="d-none d-md-block br"
+					/>
+					pour prendre soins des plus fragiles</span
+				>
+			</p>
+
+			<div class="d-flex flex-row align-items-center justify-content-center">
+				<div
+					class="don-type-item active"
+					data-target="#don-type-ifi"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?"
+				>
+					<span>IFI</span>
+				</div>
+				<div
+					class="don-type-item"
+					data-target="#don-type-ir"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?"
+				>
+					<span>IR</span>
+				</div>
+				<div
+					class="don-type-item"
+					data-target="#don-type-is"
+					data-toggle="tooltip"
+					data-placement="bottom"
+					title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?"
+				>
+					<span>IS</span>
+				</div>
+			</div>
+
+			<!-- DON TYPE CONTENT IFI -->
+			<div class="don-type-content" id="don-type-ifi">
+				<div
+					class="d-flex flex-row flex-wrap justify-content-center align-items-start"
+				>
+					<span class="percent">75%</span>
+					<span class="limit"
+						>du montant de mon don à la Fondation sont déductibles de cet impôt,
+						dans la limite de 50 000 € par an.</span
+					>
+				</div>
+				<div
+					class="text-center d-flex flex-column justify-content-center align-items-center"
+				>
+					<div style="max-width: 350px;">
+						<a href="#" target="_blank" class="d-block button-don mt-4">
+							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+							<span class="text fs-20">Je fais un don IFI en ligne</span>
+						</a>
+						<a
+							href="#"
+							target="_blank"
+							class="d-block button-don-virement mt-3"
+						>
+							<span class="text">Je fais un don par virement bancaire</span>
+						</a>
+						<a href="#" target="_blank" class="d-block button-don-cheque mt-3"
+							>Je n’ai pas d’autres moyens de paiement,
+							je&nbsp;fais&nbsp;un&nbsp;don&nbsp;par&nbsp;chèque</a
+						>
+					</div>
+				</div>
+			</div>
+			<!-- DON TYPE CONTENT IFI -->
+
+			<!-- DON TYPE CONTENT IR -->
+			<div class="don-type-content hidden" id="don-type-ir">
+				<div
+					class="d-flex flex-row flex-wrap justify-content-center align-items-start"
+				>
+					<span class="percent">66%</span>
+					<span class="limit"
+						>du montant de mon don à la Fondation sont déductibles de l’Impôt
+						sur le revenu, dans la limite de 20% du revenu net imposable.</span
+					>
+				</div>
+				<div
+					class="text-center d-flex flex-column justify-content-center align-items-center"
+				>
+					<div style="max-width: 350px; width: 100%;">
+						<a href="#" target="_blank" class="d-block button-don mt-4">
+							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+							<span class="text fs-20">Je fais un don IR en ligne</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- DON TYPE CONTENT IR -->
+
+			<!-- DON TYPE CONTENT IS -->
+			<div class="don-type-content hidden" id="don-type-is">
+				<div
+					class="d-flex flex-row flex-wrap justify-content-center align-items-start"
+				>
+					<span class="percent">60%</span>
+					<span class="limit"
+						>du montant de mon don à la Fondation, au titre du mécénat, sont
+						déductibles de cet impôt, dans la limite de 20 000€ ou de 0,5% du
+						chiffre d’affaires hors taxes (au choix).</span
+					>
+				</div>
+				<div
+					class="text-center d-flex flex-column justify-content-center align-items-center"
+				>
+					<div style="max-width: 350px; width: 100%;">
+						<a href="#" target="_blank" class="d-block button-don mt-4">
+							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+							<span class="text fs-20">Je fais un don en ligne</span>
+						</a>
+						<a
+							href="#"
+							target="_blank"
+							class="d-block button-don-virement mt-3"
+						>
+							<span class="text">Je fais un don par virement bancaire</span>
+						</a>
+						<a href="#" target="_blank" class="d-block button-don-cheque mt-3"
+							>Je n’ai pas d’autres moyens de paiement,
+							je&nbsp;fais&nbsp;un&nbsp;don&nbsp;par&nbsp;chèque</a
+						>
+					</div>
+				</div>
+			</div>
+			<!-- DON TYPE CONTENT IS -->
+		</section>
+		<!-- DEFISCALISATION -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- DEDUCTION -->
+		<section class="deduction">
+			<img
+				class="plus d-none d-md-block"
+				src="assets/img/deduction-plus.png"
+				alt=""
+			/>
+			<p class="title text-center">
+				<span class="my-border"
+					>Exemples de <span class="red">déductions</span> fiscales</span
+				>
+			</p>
+			<div
+				class="d-flex flex-row flex-wrap justify-content-sm-start justify-content-md-center"
+			>
+				<p class="mx-2 mx-md-5 my-2 red">
+					<span class="square red mr-2"></span>Montant après déduction
+				</p>
+				<p class="mx-2 mx-md-5 my-2 grey">
+					<span class="square grey mr-2"></span>Déduction fiscale
+				</p>
+			</div>
+			<!-- CIRCLES -->
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col-sm-12 col-md-6 col-lg-4 text-center circle-left">
+						<div class="circle-wrapper">
+							<div class="circle-background">
+								<span class="inside">
+									<span class="text">Montant de votre don</span>
+									<span class="amount-center">1 000€</span>
+								</span>
+								<span class="amount-left-bottom">750€</span>
+								<span class="amount-right-top">250€&nbsp;&nbsp;</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 text-center circle-middle">
+						<div class="circle-wrapper">
+							<div class="circle-background">
+								<span class="inside">
+									<span class="text">Montant de votre don</span>
+									<span class="amount-center">5 000€</span>
+								</span>
+								<span class="amount-left-bottom">750€</span>
+								<span class="amount-right-top">1 000€</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-4 text-center circle-right">
+						<div class="circle-wrapper">
+                            <div class="circle-background">
+                                <span class="inside">
+                                    <span class="text">Montant de votre don</span>
+                                    <span class="amount-center"
+                                        ><input
+                                            type="text"
+                                            value="10 000€"
+                                            placeholder="Montant"
+                                            class="free-amount"
+                                            autocomplete="off"
+                                    /></span>
+                                </span>
+                                <span class="amount-left-bottom">7 500€</span>
+                                <span class="amount-right-top">2 500€</span>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+			<!-- CIRCLES -->
+		</section>
+		<!-- DEDUCTION -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- CALENDAR -->
+		<section class="calendar">
+			<p class="title text-center">
+				<span class="my-border"
+					>Votre <span class="red">calendrier</span> fiscal 2020</span
+				>
+			</p>
+			<div class="d-flex flex-column mx-auto" style="max-width: 550px;">
+				<p class="votre-decla">
+					Votre déclaration d’IFI est à effectuer en même temps et dans les
+					mêmes délais que votre déclaration d’Impôt sur le Revenu.
+				</p>
+				<p class="en-raison">
+					En raison de l’épidémie de Covid19 et des mesures de confinement
+					corrélatives, la campagne de déclaration d’impôt pourrait être
+					modifiée en profondeur et les dates limites de déclaration reportées.
+				</p>
+			</div>
+			<p class="date-limite">Dates limites de déclaration :</p>
+			<div class="d-flex flex-row flex-wrap justify-content-center">
+				<p
+					class="mx-2 mx-md-5 my-2 declaration-type-item active"
+					data-target="#declaration-type-online"
+				>
+					<img class="picto en-ligne" src="assets/img/en-ligne.png" alt="" />En
+					ligne
+				</p>
+				<p
+					class="mx-2 mx-md-5 my-2 declaration-type-item"
+					data-target="#declaration-type-paper"
+				>
+					<img
+						class="picto en-papier"
+						src="assets/img/en-papier.png"
+						alt=""
+					/>Papier
+				</p>
+			</div>
+
+			<!-- Declaration type online -->
+			<div id="declaration-type-online" class="declaration-type-content">
+				<div class="container">
+					<div class="row mt-5">
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="bloc-date">
+								<span class="jour">Jeudi</span>
+								<span class="date">4 Juin</span>
+								<span class="avant">avant minuit</span>
+								<span class="zone">Zone 1</span>
+								<img
+									class="interrogation"
+									src="assets/img/picto/interrogation.png"
+									data-toggle="tooltip"
+									data-placement="bottom"
+									title="(départements 1 à 19), Monaco et non-résidents"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 col-lg-4">
+							<div class="bloc-date">
+								<span class="jour">Lundi</span>
+								<span class="date">8 Juin</span>
+								<span class="avant">avant minuit</span>
+								<span class="zone">Zone 1</span>
+								<img
+									class="interrogation"
+									src="assets/img/picto/interrogation.png"
+									data-toggle="tooltip"
+									data-placement="bottom"
+									title="(départements 1 à 19), Monaco et non-résidents"
+								/>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-4">
+							<div class="bloc-date">
+								<span class="jour">Jeudi</span>
+								<span class="date">11 Juin</span>
+								<span class="avant">avant minuit</span>
+								<span class="zone">Zone 1</span>
+								<img
+									class="interrogation"
+									src="assets/img/picto/interrogation.png"
+									data-toggle="tooltip"
+									data-placement="bottom"
+									title="(départements 1 à 19), Monaco et non-résidents"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Declaration type online -->
+			<!-- Declaration type paper -->
+			<div id="declaration-type-paper" class="declaration-type-content hidden">
+				<div class="container">
+					<div class="row mt-5">
+						<div class="col-sm-12">
+							<div class="bloc-date">
+								<span class="jour">Vendredi</span>
+								<span class="date">12 Juin</span>
+								<span class="avant">avant minuit</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Declaration type paper -->
+		</section>
+		<!-- CALENDAR -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- CONTACT -->
+		<section class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-8 col-lg-7">
+						<div class="bloc-contact">
+							<div class="row">
+								<div class="col-sm-12 col-md-4 col-lg-4 text-center">
+									<img class="directrice" src="assets/img/directrice.png" />
+								</div>
+								<div class="col-sm-12 col-md-8 col-lg-8">
+									<div class="bloc-text">
+										<p class="une-question">
+											<span>Une question ?</span> Contactez votre contact
+											personnel
+										</p>
+										<p class="nom">
+											Dominique Jan-Nassé, Directrice de la Fondation, est à
+											votre à votre disposition
+										</p>
+										<p class="email">
+											<img
+												class="picto"
+												alt=""
+												src="assets/img/picto/message.png"
+											/>d.jan@ordredemaltefrance.org
+										</p>
+										<p class="tel">
+											<img
+												class="picto"
+												alt=""
+												src="assets/img/picto/tel.png"
+											/>+33 1 55 74 53 41
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-4 col-lg-5">
+						<div class="bloc-contact">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="bloc-text">
+										<p class="une-question mb-4">
+											Vous souhaitez <br /><span>en savoir plus ?</span>
+										</p>
+										<div class="d-flex flex-row align-items-center">
+											<img
+												class="mr-2"
+												src="assets/img/download.png"
+												style="width: 35px; height: 40px;"
+											/>
+											<p>
+												Je télécharge la documentation complète sur les actions
+												de la Fondation
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- CONTACT -->
+		<!-- --------------------------------------------------------------- -->
+		<!-- FOOTER -->
+		<footer></footer>
+		<!-- FOOTER -->
+
+		<!-- JS -->
+		<script
+			  src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			  crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
+
+		<script type="application/javascript" src="assets/js/sticky.js"></script>
+		<script
+			type="application/javascript"
+			src="assets/js/click-to-expand.js"
+		></script>
+		<script
+			type="application/javascript"
+			src="assets/js/defiscalisation.js"
+		></script>
+		<script type="application/javascript" src="assets/js/calendar.js"></script>
+
+		<!-- JS -->
+	</body>
 </html>
