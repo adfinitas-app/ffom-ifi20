@@ -6,15 +6,15 @@
         display: inline-block;
         
         .guillemet-left {
-            top: -112px;
-            left: -48px;
+            top: -45px;
+            left: -62px;
             position: absolute;
         }
         
         .guillemet-right
         {
-            bottom: -30px;
-            right: -22px;
+            bottom: -7px;
+            right: -30px;
             position: absolute;
         }
         
@@ -101,6 +101,22 @@
         .savez-vous {
             color: $color-urgency;
             font-size: 30px;
+        }
+    }
+
+
+    //# FIX MOBILE
+    @include media-breakpoint-down(sm) {
+        & {
+            padding: 20px 40px;
+
+            .quote-container {
+
+                .guillemet-right {
+                    bottom: -7px;
+                    right: -45px;
+                }
+            }
         }
     }
 }

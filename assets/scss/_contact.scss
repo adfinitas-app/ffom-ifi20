@@ -2,8 +2,10 @@
     padding: 60px 20px 20px 20px;
 
     .bloc-contact {
-        background-color: $color-very-light-grey;
+        background-color: #f5f5f6;
         padding: 40px 20px 40px 20px;
+        position: relative;
+        z-index: 2;
 
         margin-top: 20px;
 

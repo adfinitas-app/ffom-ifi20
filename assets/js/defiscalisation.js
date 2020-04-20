@@ -20,13 +20,44 @@ function buildDeduction(left, middle, right) {
 
 $(document).ready(function () {
 	//ACTIVATE TOOLTIP
-	$('.defiscalisation [data-toggle="tooltip"]').tooltip({ trigger: "manual" });
+	$('.defiscalisation [data-toggle="tooltip"]').tooltip();
+
+    function isElementInViewport(elem) {
+        var $elem = $(elem);
+    
+        // Get the scroll position of the page.
+        var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+        var viewportTop = $(scrollElem).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+    
+        // Get the position of the element on the page.
+        var elemTop = Math.round( $elem.offset().top );
+        var elemBottom = elemTop + $elem.height();
+    
+        return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+    }
 
 	//init
-	$(".don-type-item").first().tooltip("show");
+	//$(".don-type-item").first().tooltip("show");
 	$($(".don-type-item").first().data("target")).show();
 
-	fadeInCircles();
+    // Capture scroll events
+    const circles = '.circles';
+    let animated = false;
+
+    if (animated == false && isElementInViewport(circles)) {
+        // Start the animation
+        fadeInCircles();
+        animated = true;
+    }
+
+    $(window).scroll(function(){
+    
+        if (animated == false && isElementInViewport(circles)) {
+            // Start the animation
+	        fadeInCircles();
+        }
+    });
 
 	//FUNCTION TO MAKE THE CIRCLES APPEAR ONE BY ONE
 	function fadeInCircles() {

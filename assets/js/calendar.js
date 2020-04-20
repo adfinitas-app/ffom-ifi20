@@ -7,8 +7,6 @@ $(document).ready(function() {
 
         const target = $(this).data('target');
 
-        console.log($(target));
-
         $(target).siblings('.declaration-type-content').hide();
         $(target).show();
     });

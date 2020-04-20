@@ -8,7 +8,7 @@ const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const terser = require('gulp-terser');
 const browser = require('browser-sync');
-
+const useref = require('gulp-useref');
 const BUILD_FOLDER = './dist';
 
 // Delete the "dist" folder
@@ -21,6 +21,7 @@ function clean(cb) {
 //Move index.html to build folder
 function index(cb) {
     return src('./index.html')
+        //.pipe(useref())
         .pipe(dest(BUILD_FOLDER));
 }
 

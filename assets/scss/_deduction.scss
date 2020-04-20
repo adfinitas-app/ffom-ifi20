@@ -114,4 +114,13 @@
             }
         }
     }
+
+    //# FIX MOBILE
+	@include media-breakpoint-down(sm) {
+		& {
+            .title {
+                line-height: 1.2;
+            }
+        }
+    }
 }

@@ -50,3 +50,11 @@ $font-sizes
 .br {
   font-size: 0px;
 }
+
+.hamburger {
+  outline: none !important;
+
+  .hamburger-inner:before, .hamburger-inner:after, .hamburger-inner {
+    background-color: white !important;
+  }
+}

@@ -21,7 +21,8 @@
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-terser": "^1.2.0"
+    "gulp-terser": "^1.2.0",
+    "gulp-useref": "^4.0.1"
   },
   "dependencies": {
     "rimraf": "^3.0.2"

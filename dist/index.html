@@ -24,44 +24,343 @@
 		<!-- BANDEAU COVID -->
 		<!-- --------------------------------------------------------------- -->
 		<!-- HEADER DESKTOP -->
-		<header class="d-none d-md-block">
+		<header class="header-desktop d-none d-md-block">
 			<!-- NAV DESKTOP-->
-			<nav>
+			<nav class="nav-desktop d-none d-md-flex">
 				<a href="#">
 					<img src="assets/img/logo.png" alt="logo" />
 				</a>
 				<div class="links">
-					<a href="#" class="link"><span>En france</span></a>
-					<a href="#" class="link"><span>En Syrie</span></a>
-					<a href="#" class="link"><span>En Palestine</span></a>
+					<a href="#panel-france" class="link anchor" data-country="france"><span>En france</span></a>
+					<a href="#panel-syrie" class="link anchor" data-country="syrie"><span>En Syrie</span></a>
+					<a href="#panel-palestine" class="link anchor" data-country="palestine"><span>En Palestine</span></a>
 				</div>
-				<a href="#" target="_blank" class="d-block button-don">
-					<img src="assets/img/picto/croix.png" alt="+" class="cross" />
-					<span class="text">Je fais un don IFI</span>
+				<a href="#" target="_blank" class="button-don-refonte">
+					<div class="my-border-white">
+						<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+						<span class="text fs-14">Je fais un don IFI</span>
+					</div>
 				</a>
 			</nav>
 			<!-- NAV DESKTOP -->
 
-			<img
-				src="assets/img/header-plus-palestin.png"
-				class="header-plus-img palestin battement"
-			/>
-			<span class="donnez">Donnez-nous</span>
-			<span class="plus"
-				><img src="assets/img/plus.png" alt="+" />de<br /><span class="force"
-					>forces</span
-				></span
-			>
-
-			<div class="pour-prendre-container">
-				<span class="pour-prendre">Pour prendre soin des plus fragiles</span>
-				<a href="#" target="_blank" class="d-inline-block button-don mt-1">
-					<img src="assets/img/picto/croix.png" alt="+" class="cross" />
-					<span class="text fs-14">Je fais un don IFI</span>
-				</a>
+			<!-- HEADER CONTAINER -->
+			<div class="header-container header-active">
+				<img
+					src="assets/img/header-plus-palestin.png"
+					class="header-plus-img palestin battement"
+				/>
+				<span class="donnez">Donnez-nous</span>
+				<span class="plus">
+					<img src="assets/img/plus.png" alt="+" />de<br /><span class="force">forces</span>
+				</span>
+				<div class="pour-prendre-container">
+					<span class="pour-prendre">Pour prendre soin des plus fragiles</span>
+					<div class="d-inline-block">
+						<a href="#" target="_blank" class="button-don-refonte mt-1">
+							<div class="my-border-white">
+								<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+								<span class="text fs-14">Je fais un don IFI</span>
+							</div>
+						</a>
+					</div>
+				</div>
 			</div>
+			<!-- HEADER CONTAINER -->
+
+			<!-- HEADER CONTAINER FRANCE -->
+			<div class="header-container-france" id="panel-france">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="assets/img/header-plus-france.png" class="header-plus-img" />
+							<span class="donnez">Donnez-nous<br></span>
+							<span class="plus">
+								<img src="assets/img/plus.png" alt="+" />de <span class="force">forces</span>
+							</span>
+						</div>
+						<div class="col-md-6 my-right">
+							<p class="pour">POUR TENDRE LA MAIN<br class="d-none d-md-block"> AUX PLUS DÉMUNIS</p>
+							<p class="en-pays">En <b>france</b></p>
+							<div class="d-inline-block">
+								<a href="#" class="download">
+									<img src="assets/img/picto/header-download.png" class="mx-1"/>
+									<p class="mx-1">Je télécharge la fiche<br class="d-none d-md-block"/> détaillée du projet</p>
+								</a>
+							</div>
+							<div class="my-container">
+								<div class="red-box-out">
+									<div class="red-box-in">
+										En France, en 10 ans, le nombre de personnes sans abri a doublé et près de 200 000 personnes sont actuellement en situation d’isolement et d’extrême précarité.
+									</div>
+								</div>
+								<p class="nous-avons-besoin">Nous avons besoin<br class="d-none d-md-block"/> de vous pour agir + !</p>
+								<p class="text">Renforcer les maraudes sociales et médicalisées afin d’apporter soutien et soins vitaux aux personnes sans-abri est UNE PRIORITÉ.
+								<br><br>
+								Aidez-nous à donner les moyens à nos 1 500 bénévoles d’aller à la rencontre de + de personnes fragiles et assurer notamment :
+								<br><br>
+								</p>
+								<span class="bullet-point">des consultations médicalisées</span>
+								<span class="bullet-point">la distribution de sacs de couchage et de produits d’hygiène.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- HEADER CONTAINER FRANCE -->
+
+			<!-- HEADER CONTAINER SYRIE -->
+			<div class="header-container-syrie" id="panel-syrie">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="assets/img/header-plus-syrie.png" class="header-plus-img" />
+							<span class="donnez">Donnez-nous<br></span>
+							<span class="plus">
+								<img src="assets/img/plus.png" alt="+" />de <span class="force">forces</span>
+							</span>
+						</div>
+						<div class="col-md-6 my-right">
+							<p class="pour">POUR PORTER SECOURS<br class="d-none d-md-block"> AUX VICTIMES DE LA GUERRE</p>
+							<p class="en-pays">En <b>Syrie</b></p>
+							<div class="d-inline-block">
+								<a href="#" class="download">
+									<img src="assets/img/picto/header-download.png" class="mx-1"/>
+									<p class="mx-1">Je télécharge la fiche<br class="d-none d-md-block"/> détaillée du projet</p>
+								</a>
+							</div>
+							<div class="my-container">
+								<div class="red-box-out">
+									<div class="red-box-in">
+										Au cœur des conflits en Syrie, 19 millions de civils parmi lesquels des familles et des enfants tentent de survivre. L’accès aux soins est impossible et 11 millions de syriens dépendent de l’aide humanitaire.
+									</div>
+								</div>
+								<p class="nous-avons-besoin">Nous avons besoin<br class="d-none d-md-block"/> de vous pour agir + !</p>
+								<p class="text">
+									Dans les zones touchées par le conflit armé, disposer des moyens essentiels pour apporter une aide adaptée et vitale aux besoins est UNE PRIORITÉ.
+									<br><br>
+									Aidez-nous à être le + réactif possible pour notamment : 
+									<br><br>
+								</p>
+								<span class="bullet-point">Secourir dans l’urgence les survivants des massacres en Syrie,
+								</span>
+								<span class="bullet-point">Mettre en place des cellules d’aide psychologique adaptée au traumatisme de guerre.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- HEADER CONTAINER SYRIE -->
+
+			<!-- HEADER CONTAINER PALESTINE -->
+			<div class="header-container-palestine" id="panel-palestine">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<img src="assets/img/header-plus-palestine.png" class="header-plus-img" />
+							<span class="donnez">Donnez-nous<br></span>
+							<span class="plus">
+								<img src="assets/img/plus.png" alt="+" />de <span class="force">forces</span>
+							</span>
+						</div>
+						<div class="col-md-6 my-right">
+							<p class="pour">Pour protéger la vie<br class="d-none d-md-block"> de celles qui la donnent</p>
+							<p class="en-pays">En <b>Palestine</b></p>
+							<div class="d-inline-block">
+								<a href="#" class="download">
+									<img src="assets/img/picto/header-download.png" class="mx-1"/>
+									<p class="mx-1">Je télécharge la fiche<br class="d-none d-md-block"/> détaillée du projet</p>
+								</a>
+							</div>
+							<div class="my-container">
+								<div class="red-box-out">
+									<div class="red-box-in">
+										Chaque jour, dans le monde, 830 femmes meurent de causes évitables pendant leur grossesse ou leur accouchement, et plus des 2/3 des décès d’enfants en période néonatale pourraient, eux aussi, être empêchés. 
+									</div>
+								</div>
+								<p class="nous-avons-besoin">Nous avons besoin<br class="d-none d-md-block"/> de vous pour agir + !</p>
+								<p class="text">
+									À Bethléem, maintenir et renforcer l’activité de notre Hôpital Maternité de la Sainte Famille et sa clinique mobile est UNE PRIORITÉ.
+									<br><br>
+									Aidez-nous à dispenser des soins de haute qualité pour permettre à + de femmes d’être suivies et de mettre au monde leur enfant en sécurité et pour sauver plus de prématurés.
+									<br><br>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- HEADER CONTAINER PALESTINE -->
 		</header>
-		<!-- HEADER -->
+		<!-- HEADER DESKTOP -->
+
+		<!-- HEADER MOBILE -->
+		<header class="header-mobile d-block d-md-none">
+			<!-- NAV MOBILE-->
+			<nav class="nav-mobile d-flex d-md-none">
+				<a href="#">
+					<img src="assets/img/logo-mobile.png" alt="logo" />
+				</a>
+				<button class="hamburger hamburger--squeeze" type="button">
+					<span class="hamburger-box">
+					  <span class="hamburger-inner"></span>
+					</span>
+				</button>  
+				<a href="#" target="_blank" class="button-don-refonte">
+					<div class="my-border-white">
+						<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+						<span class="text fs-14">Je fais un don IFI</span>
+					</div>
+				</a>
+			</nav>
+			<nav class="nav-mobile-expanded">
+				<span class="donnez">Donnez-nous</span>
+				<span class="plus">
+					<img src="assets/img/plus.png" alt="+" />de<br /><span class="force">forces</span>
+				</span>
+				<span class="pour-prendre">Pour prendre soin des + fragiles</span>
+
+				<div class="links">
+					<a href="#panel-france-mobile" class="link anchor" data-country="france"><span>En france</span></a>
+					<a href="#panel-syrie-mobile" class="link anchor" data-country="syrie"><span>En Syrie</span></a>
+					<a href="#panel-palestine-mobile" class="link anchor" data-country="palestine"><span>En Palestine</span></a>
+				</div>
+				<a href="#" target="_blank" class="button-don-refonte mt-3">
+					<div class="my-border-white text-center">
+						<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+						<span class="text fs-14">Je fais un don IFI</span>
+					</div>
+				</a>
+			</nav>
+			<!-- NAV MOBILE -->
+
+			<!-- HEADER CONTAINER -->
+			<div class="header-container header-active">
+				<img src="assets/img/header-plus-palestin.png" class="header-plus-img battement" />
+				
+				<span class="donnez">Donnez-nous</span>
+				<span class="plus">
+					<img src="assets/img/plus.png" alt="+" />de<br /><span class="force">forces</span>
+				</span>
+				<span class="pour-prendre">Pour prendre soin des plus fragiles</span>
+
+				<div class="pour-prendre-container">
+					<div class="d-inline-block">
+						<a href="#" target="_blank" class="button-don-refonte mt-1">
+							<div class="my-border-white">
+								<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+								<span class="text fs-14">Je fais un don IFI</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- HEADER CONTAINER -->
+
+			<!-- HEADER CONTAINER FRANCE -->
+			<div class="header-container-france" id="panel-france-mobile">
+				<img src="assets/img/header-plus-france.png" class="header-plus-img" />
+				
+				<span class="donnez">Donnez-nous</span>
+				<span class="plus">
+					<img src="assets/img/plus.png" alt="+" />de <span class="force">forces</span>
+				</span>
+				<span class="pour-prendre">POUR TENDRE LA MAIN<br> AUX PLUS DÉMUNIS</span>
+				<span class="en-pays">En <b>france</b></span>
+				<div class="d-inline-block mt-3">
+					<a href="#" class="download">
+						<img src="assets/img/picto/header-download.png" class="mx-1"/>
+						<p class="mx-1">Je télécharge la fiche<br class="d-none d-md-block"/> détaillée du projet</p>
+					</a>
+				</div>
+				<div class="my-container">
+					<div class="red-box-out">
+						<div class="red-box-in">
+							En France, en 10 ans, le nombre de personnes sans abri a doublé et près de 200 000 personnes sont actuellement en situation d’isolement et d’extrême précarité.
+						</div>
+					</div>
+					<p class="nous-avons-besoin">Nous avons besoin<br class="d-none d-md-block"/> de vous pour agir + !</p>
+					<p class="text">Renforcer les maraudes sociales et médicalisées afin d’apporter soutien et soins vitaux aux personnes sans-abri est UNE PRIORITÉ.
+					<br><br>
+					Aidez-nous à donner les moyens à nos 1 500 bénévoles d’aller à la rencontre de + de personnes fragiles et assurer notamment :
+					<br><br>
+					</p>
+					<span class="bullet-point">des consultations médicalisées</span>
+					<span class="bullet-point">la distribution de sacs de couchage et de produits d’hygiène.</span>
+				</div>
+			</div>
+			<!-- HEADER CONTAINER FRANCE -->
+
+			<!-- HEADER CONTAINER SYRIE -->
+			<div class="header-container-syrie" id="panel-syrie-mobile">
+				<img src="assets/img/header-plus-syrie.png" class="header-plus-img" />
+				
+				<span class="donnez">Donnez-nous</span>
+				<span class="plus">
+					<img src="assets/img/plus.png" alt="+" />de <span class="force">forces</span>
+				</span>
+				<span class="pour-prendre">POUR PORTER SECOURS AUX VICTIMES DE LA GUERRE</span>
+				<span class="en-pays">En <b>Syrie</b></span>
+				<div class="d-inline-block mt-3">
+					<a href="#" class="download">
+						<img src="assets/img/picto/header-download.png" class="mx-1"/>
+						<p class="mx-1">Je télécharge la fiche<br class="d-none d-md-block"/> détaillée du projet</p>
+					</a>
+				</div>
+				<div class="my-container">
+					<div class="red-box-out">
+						<div class="red-box-in">
+							Au cœur des conflits en Syrie, 19 millions de civils parmi lesquels des familles et des enfants tentent de survivre. L’accès aux soins est impossible et 11 millions de syriens dépendent de l’aide humanitaire.
+						</div>
+					</div>
+					<p class="nous-avons-besoin">Nous avons besoin<br class="d-none d-md-block"/> de vous pour agir + !</p>
+					<p class="text">
+						Dans les zones touchées par le conflit armé, disposer des moyens essentiels pour apporter une aide adaptée et vitale aux besoins est UNE PRIORITÉ.
+						<br><br>
+						Aidez-nous à être le + réactif possible pour notamment :
+						<br><br>
+					</p>
+					<span class="bullet-point">Secourir dans l’urgence les survivants des massacres en Syrie</span>
+					<span class="bullet-point">Mettre en place des cellules d’aide psychologique adaptée au traumatisme de guerre.</span>
+				</div>
+			</div>
+			<!-- HEADER CONTAINER SYRIE -->
+
+			<!-- HEADER CONTAINER PALESTINE -->
+			<div class="header-container-palestine" id="panel-palestine-mobile">
+				<img src="assets/img/header-plus-palestine.png" class="header-plus-img" />
+				
+				<span class="donnez">Donnez-nous</span>
+				<span class="plus">
+					<img src="assets/img/plus.png" alt="+" />de <span class="force">forces</span>
+				</span>
+				<span class="pour-prendre">pour  protéger la vie de celles qui la donnent</span>
+				<span class="en-pays">En <b>palestine</b></span>
+				<div class="d-inline-block mt-3">
+					<a href="#" class="download">
+						<img src="assets/img/picto/header-download.png" class="mx-1"/>
+						<p class="mx-1">Je télécharge la fiche<br class="d-none d-md-block"/> détaillée du projet</p>
+					</a>
+				</div>
+				<div class="my-container">
+					<div class="red-box-out">
+						<div class="red-box-in">
+							Chaque jour, dans le monde,<br>
+							830 femmes meurent de causes évitables pendant leur grossesse ou leur accouchement, et plus des 2/3 des décès d’enfants en période néonatale pourraient, eux aussi, être empêchés. 
+						</div>
+					</div>
+					<p class="nous-avons-besoin">Nous avons besoin<br class="d-none d-md-block"/> de vous pour agir + !</p>
+					<p class="text">
+						À Bethléem, maintenir et renforcer l’activité de notre Hôpital Maternité de la Sainte Famille et sa clinique mobile est UNE PRIORITÉ.
+						<br><br>
+						Aidez-nous à dispenser des soins de haute qualité pour permettre à + de femmes d’être suivies et de mettre au monde leur enfant en sécurité et pour sauver plus de prématurés.
+						<br><br>
+					</p>
+				</div>
+			</div>
+			<!-- HEADER CONTAINER PALESTINE -->
+		</header>
+		<!-- HEADER MOBILE -->
 		<!-- --------------------------------------------------------------- -->
 		<!-- EDITO -->
 		<section class="edito">
@@ -78,12 +377,12 @@
 						<div class="quote-container">
 							<img
 								class="guillemet-left"
-								src="assets/img/picto/guillemet.png"
+								src="assets/img/picto/quote1.png"
 								alt='"'
 							/>
 							<img
 								class="guillemet-right"
-								src="assets/img/picto/guillemet.png"
+								src="assets/img/picto/quote2.png"
 								alt='"'
 							/>
 							<span class="donnez-nous">
@@ -98,7 +397,7 @@
 								Fondation Française de l’Ordre de Malte
 							</p>
 						</div>
-						<div class="text-left w-100">
+						<div class="text-center text-md-left w-100">
 							<div
 								id="edito-text-container"
 								class="edito-text-container collapse"
@@ -289,6 +588,10 @@
 					title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?"
 				>
 					<span>IFI</span>
+					<span class="triangle-container">
+						<span class="line"></span>
+						<span class="triangle"></span>
+					</span>
 				</div>
 				<div
 					class="don-type-item"
@@ -298,6 +601,10 @@
 					title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?"
 				>
 					<span>IR</span>
+					<span class="triangle-container">
+						<span class="line"></span>
+						<span class="triangle"></span>
+					</span>
 				</div>
 				<div
 					class="don-type-item"
@@ -307,6 +614,10 @@
 					title="Je suis redevable de l'Impôt sur la Fortune Immobilière ?"
 				>
 					<span>IS</span>
+					<span class="triangle-container">
+						<span class="line"></span>
+						<span class="triangle"></span>
+					</span>
 				</div>
 			</div>
 
@@ -325,14 +636,16 @@
 					class="text-center d-flex flex-column justify-content-center align-items-center"
 				>
 					<div style="max-width: 350px;">
-						<a href="#" target="_blank" class="d-block button-don mt-4">
-							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
-							<span class="text fs-20">Je fais un don IFI en ligne</span>
+						<a href="#" target="_blank" class="button-don-refonte en-ligne mt-3">
+							<div class="my-border-white">
+								<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+								<span class="text fs-14">Je fais un don IFI en ligne</span>
+							</div>
 						</a>
 						<a
 							href="#"
 							target="_blank"
-							class="d-block button-don-virement mt-3"
+							class="d-flex w-100 justify-content-center align-items-center button-don-virement mt-3"
 						>
 							<span class="text">Je fais un don par virement bancaire</span>
 						</a>
@@ -360,9 +673,11 @@
 					class="text-center d-flex flex-column justify-content-center align-items-center"
 				>
 					<div style="max-width: 350px; width: 100%;">
-						<a href="#" target="_blank" class="d-block button-don mt-4">
-							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
-							<span class="text fs-20">Je fais un don IR en ligne</span>
+						<a href="#" target="_blank" class="button-don-refonte en-ligne mt-4">
+							<div class="my-border-white">
+								<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+								<span class="text fs-14">Je fais un don IR en ligne</span>
+							</div>
 						</a>
 					</div>
 				</div>
@@ -385,14 +700,16 @@
 					class="text-center d-flex flex-column justify-content-center align-items-center"
 				>
 					<div style="max-width: 350px; width: 100%;">
-						<a href="#" target="_blank" class="d-block button-don mt-4">
-							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
-							<span class="text fs-20">Je fais un don en ligne</span>
+						<a href="#" target="_blank" class="button-don-refonte en-ligne mt-4">
+							<div class="my-border-white">
+								<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+								<span class="text fs-14">Je fais un don IR en ligne</span>
+							</div>
 						</a>
 						<a
 							href="#"
 							target="_blank"
-							class="d-block button-don-virement mt-3"
+							class="d-flex w-100 justify-content-center align-items-center  button-don-virement mt-3"
 						>
 							<span class="text">Je fais un don par virement bancaire</span>
 						</a>
@@ -430,7 +747,7 @@
 				</p>
 			</div>
 			<!-- CIRCLES -->
-			<div class="container mt-5">
+			<div class="container mt-5 circles">
 				<div class="row">
 					<div class="col-sm-12 col-md-6 col-lg-4 text-center circle-left">
 						<div class="circle-wrapper">
@@ -458,22 +775,22 @@
 					</div>
 					<div class="col-sm-12 col-md-12 col-lg-4 text-center circle-right">
 						<div class="circle-wrapper">
-                            <div class="circle-background">
-                                <span class="inside">
-                                    <span class="text">Montant de votre don</span>
-                                    <span class="amount-center"
-                                        ><input
-                                            type="text"
-                                            value="10 000€"
-                                            placeholder="Montant"
-                                            class="free-amount"
-                                            autocomplete="off"
-                                    /></span>
-                                </span>
-                                <span class="amount-left-bottom">7 500€</span>
-                                <span class="amount-right-top">2 500€</span>
-                            </div>
-                        </div>
+							<div class="circle-background">
+								<span class="inside">
+									<span class="text">Montant de votre don</span>
+									<span class="amount-center"
+										><input
+											type="text"
+											value="10 000€"
+											placeholder="Montant"
+											class="free-amount"
+											autocomplete="off"
+									/></span>
+								</span>
+								<span class="amount-left-bottom">7 500€</span>
+								<span class="amount-right-top">2 500€</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -502,14 +819,18 @@
 			<p class="date-limite">Dates limites de déclaration :</p>
 			<div class="d-flex flex-row flex-wrap justify-content-center">
 				<p
-					class="mx-2 mx-md-5 my-2 declaration-type-item active"
+					class="mx-2 mx-md-3 my-2 declaration-type-item active"
 					data-target="#declaration-type-online"
 				>
 					<img class="picto en-ligne" src="assets/img/en-ligne.png" alt="" />En
 					ligne
+					<span class="triangle-container mt-2">
+						<span class="line"></span>
+						<span class="triangle"></span>
+					</span>
 				</p>
 				<p
-					class="mx-2 mx-md-5 my-2 declaration-type-item"
+					class="mx-2 mx-md-3 my-2 declaration-type-item"
 					data-target="#declaration-type-paper"
 				>
 					<img
@@ -517,6 +838,10 @@
 						src="assets/img/en-papier.png"
 						alt=""
 					/>Papier
+					<span class="triangle-container mt-2">
+						<span class="line"></span>
+						<span class="triangle"></span>
+					</span>
 				</p>
 			</div>
 
@@ -524,49 +849,73 @@
 			<div id="declaration-type-online" class="declaration-type-content">
 				<div class="container">
 					<div class="row mt-5">
-						<div class="col-sm-12 col-md-6 col-lg-4">
-							<div class="bloc-date">
-								<span class="jour">Jeudi</span>
-								<span class="date">4 Juin</span>
-								<span class="avant">avant minuit</span>
-								<span class="zone">Zone 1</span>
-								<img
-									class="interrogation"
-									src="assets/img/picto/interrogation.png"
-									data-toggle="tooltip"
-									data-placement="bottom"
-									title="(départements 1 à 19), Monaco et non-résidents"
-								/>
+						<div class="col-sm-12 col-md-6 col-lg-4 date-zone-container">
+							<div class="row">
+								<div class="col-6 col-md-12">
+									<div class="bloc-date">
+										<span class="jour">Jeudi</span>
+										<span class="date">4 Juin</span>
+										<span class="avant">avant minuit</span>
+									</div>
+								</div>
+								<div class="col-6 col-md-12">
+									<div class="bloc-zone">
+										<span class="zone">Zone 1</span>
+										<img
+											class="interrogation"
+											src="assets/img/picto/interrogation.png"
+											data-toggle="tooltip"
+											data-placement="bottom"
+											title="(départements 1 à 19), Monaco et non-résidents"
+										/>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-6 col-lg-4">
-							<div class="bloc-date">
-								<span class="jour">Lundi</span>
-								<span class="date">8 Juin</span>
-								<span class="avant">avant minuit</span>
-								<span class="zone">Zone 1</span>
-								<img
-									class="interrogation"
-									src="assets/img/picto/interrogation.png"
-									data-toggle="tooltip"
-									data-placement="bottom"
-									title="(départements 1 à 19), Monaco et non-résidents"
-								/>
+						<div class="col-sm-12 col-md-6 col-lg-4 date-zone-container">
+							<div class="row">
+								<div class="col-6 col-md-12">
+									<div class="bloc-date">
+										<span class="jour">Lundi</span>
+										<span class="date">8 Juin</span>
+										<span class="avant">avant minuit</span>
+									</div>
+								</div>
+								<div class="col-6 col-md-12">
+									<div class="bloc-zone">
+										<span class="zone">Zone 2</span>
+										<img
+											class="interrogation"
+											src="assets/img/picto/interrogation.png"
+											data-toggle="tooltip"
+											data-placement="bottom"
+											title="(départements 1 à 19), Monaco et non-résidents"
+										/>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-sm-12 col-md-12 col-lg-4">
-							<div class="bloc-date">
-								<span class="jour">Jeudi</span>
-								<span class="date">11 Juin</span>
-								<span class="avant">avant minuit</span>
-								<span class="zone">Zone 1</span>
-								<img
-									class="interrogation"
-									src="assets/img/picto/interrogation.png"
-									data-toggle="tooltip"
-									data-placement="bottom"
-									title="(départements 1 à 19), Monaco et non-résidents"
-								/>
+						<div class="col-sm-12 col-md-12 col-lg-4 date-zone-container">
+							<div class="row">
+								<div class="col-6 col-md-12">
+									<div class="bloc-date">
+										<span class="jour">Jeudi</span>
+										<span class="date">11 Juin</span>
+										<span class="avant">avant minuit</span>
+									</div>
+								</div>
+								<div class="col-6 col-md-12">
+									<div class="bloc-zone">
+										<span class="zone">Zone 3</span>
+										<img
+											class="interrogation"
+											src="assets/img/picto/interrogation.png"
+											data-toggle="tooltip"
+											data-placement="bottom"
+											title="(départements 1 à 19), Monaco et non-résidents"
+										/>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -659,15 +1008,39 @@
 		</section>
 		<!-- CONTACT -->
 		<!-- --------------------------------------------------------------- -->
+		<div class="gradient"></div>
 		<!-- FOOTER -->
-		<footer></footer>
+		<footer>
+			<img src="assets/img/footer-plus.png" class="plus d-none d-md-block""/>
+			<div class="text-center">
+				<img src="assets/img/logo-footer.png" alt="logo OMF"/>
+			</div>
+			<div class="container mt-5">
+				<div class="row">
+					<div class="col">
+						<p class="text-center">La Fondation Française de l’Ordre de Malte a été créée en 1992 par l’Association « Ordre de Malte France » pour renforcer et compléter ses moyens d’action et de collecte grâce à son statut de Fondation reconnue d’utilité publique obtenu en 1994.</p>
+						<nav class="links">
+							<a href="#">Mentions légales</a>
+							<a href="#">Contact</a>
+							<a href="#">Site institutionnel</a>
+						</nav>
+						<nav class="social-media">
+							<a href="#"><img src="assets/img/social/twitter.png" alt="twitter">
+							<a href="#"><img src="assets/img/social/youtube.png" alt="youtube">
+							<a href="#"><img src="assets/img/social/facebook.png" alt="facebook">
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<!-- FOOTER -->
 
 		<!-- JS -->
 		<script
-			  src="https://code.jquery.com/jquery-3.5.0.min.js"
-			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-			  crossorigin="anonymous"></script>
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous"
+		></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -689,6 +1062,10 @@
 			src="assets/js/defiscalisation.js"
 		></script>
 		<script type="application/javascript" src="assets/js/calendar.js"></script>
+		<script type="application/javascript" src="assets/js/header.js"></script>
+		<script type="application/javascript" src="assets/js/anchor.js"></script>
+		<script type="application/javascript" src="assets/js/nav-mobile.js"></script>
+
 
 		<!-- JS -->
 	</body>

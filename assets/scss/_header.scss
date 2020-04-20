@@ -1,88 +1,476 @@
-header {
+.header-desktop {
 	min-height: 100vh;
-	background: url("../img/header-bg.png") -4px 0px no-repeat;
+	background-color: $color-dark-blue;
+	background-image: url("../img/header-bg.png");
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: -4px 0px;
 	position: relative;
 
 	&.navSticky {
 		padding-top: $navBarHeight;
 	}
 
-	.plus {
-		font-size: 110px;
-		color: $white;
-		text-transform: uppercase;
+	.header-container {
 		position: absolute;
-		left: 59%;
-		top: 23%;
-		z-index: 2;
-		line-height: 0.8;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 
-		img {
-			vertical-align: top;
-			margin-top: 8px;
+		.plus {
+			font-size: 110px;
+			color: $white;
+			text-transform: uppercase;
+			position: absolute;
+			left: 59%;
+			top: 23%;
+			z-index: 2;
+			line-height: 0.8;
+
+			img {
+				vertical-align: top;
+				margin-top: 8px;
+			}
+
+			.force {
+				font-size: 112px;
+				font-weight: bold;
+			}
 		}
 
-		.force {
-			font-size: 112px;
-			font-weight: bold;
+		.header-plus-img {
+			position: absolute;
+			z-index: 0;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+
+			@keyframes zoom-in {
+				from {
+					width: 767px;
+				}
+
+				to {
+					width: 850px;
+				}
+			}
+
+			&.battement {
+				animation-name: zoom-in;
+				animation-delay: 0.2s;
+				animation-direction: alternate;
+				animation-duration: 2s;
+				animation-iteration-count: 6;
+			}
 		}
-	}
 
-	.header-plus-img {
-		position: absolute;
-		z-index: 0;
-		left: 50%;
-		top: 50%;
-        transform: translate(-50%, -50%);
-        
-        @keyframes zoom-in {
-            from {
-                width: 767px;
-            }
-
-            to {
-                width: 850px;
-            }
-        }
-        
-        &.battement {
-            animation-name: zoom-in;
-            animation-delay: 0.2s;
-            animation-direction: alternate;
-            animation-duration: 2s;
-            animation-iteration-count: 6;
-        }
-	}
-
-	.donnez {
-		color: $white;
-		font-size: 34px;
-		text-transform: uppercase;
-		position: absolute;
-		left: 25%;
-		top: 25%;
-		z-index: 2;
-	}
-
-	@include media-breakpoint-up(lg) {
 		.donnez {
-			left: 30%;
+			color: $white;
+			font-size: 34px;
+			text-transform: uppercase;
+			position: absolute;
+			left: 25%;
+			top: 25%;
+			z-index: 2;
+		}
+
+		@include media-breakpoint-up(lg) {
+			.donnez {
+				left: 30%;
+			}
+		}
+
+		.pour-prendre-container {
+			color: $white;
+			text-transform: uppercase;
+			position: absolute;
+			left: 59%;
+			top: 61%;
+			z-index: 2;
+			display: inline-block;
+			max-width: 400px;
+
+			span {
+				font-size: 22px;
+			}
 		}
 	}
 
-	.pour-prendre-container {
-		color: $white;
-		text-transform: uppercase;
+	.header-container-france,
+	.header-container-syrie,
+	.header-container-palestine {
 		position: absolute;
-		left: 59%;
-		top: 61%;
-		z-index: 2;
-		display: inline-block;
-		max-width: 400px;
+		top: $navBarHeight;
+		left: 200%;
+		width: 100%;
+		height: 100%;
+		color: $white;
 
-		span {
+		.my-right {
+			padding: 100px 0;
+		}
+
+		.plus {
+			font-size: 51px;
+			color: $white;
+			text-transform: uppercase;
+			line-height: 0.8;
+
+			img {
+				vertical-align: top;
+				margin-top: 8px;
+				width: 32px;
+			}
+
+			.force {
+				font-size: 51px;
+				font-weight: bold;
+			}
+		}
+
+		.header-plus-img {
+			position: absolute;
+			z-index: 0;
+			left: -2%;
+			top: -20%;
+		}
+
+		.donnez {
+			color: $white;
+			font-size: 32px;
+			text-transform: uppercase;
+		}
+
+		@include media-breakpoint-up(lg) {
+		}
+
+		//######### COLONNE DROITE
+
+		.pour {
 			font-size: 22px;
+			font-weight: bold;
+			line-height: 1.2;
+			text-transform: uppercase;
+		}
+
+		.en-pays {
+			font-size: 93px;
+			text-transform: uppercase;
+			line-height: 1.2;
+		}
+
+		.download {
+			display: flex;
+			flex-direction: row;
+			padding: 10px;
+			border: 1px solid white;
+
+			p {
+				color: $white;
+				font-size: 15px;
+				text-transform: uppercase;
+				align-items: center;
+				line-height: 1.2;
+			}
+
+			img {
+				height: 30px;
+			}
+		}
+
+		.my-container {
+			max-width: 400px;
+
+			.red-box-out {
+				margin: 20px 0;
+				border: 1px solid $color-urgency;
+				padding: 2px;
+
+				.red-box-in {
+					background: $color-urgency;
+					padding: 10px;
+				}
+			}
+
+			.nous-avons-besoin {
+				font-size: 22px;
+				font-weight: bold;
+				line-height: 1.2;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+
+			.text {
+				font-size: 20px;
+				line-height: 1.2;
+			}
+
+			.bullet-point {
+				display: block;
+				position: relative;
+				padding-left: 50px;
+				margin: 14px 0;
+
+				&:before,
+				&:after {
+					position: absolute;
+					left: 24px;
+					top: 7px;
+					content: " ";
+					height: 10px;
+					width: 2px;
+					background-color: $color-urgency;
+					border-radius: 3px;
+				}
+
+				&:before {
+					transform: rotate(0deg);
+				}
+				&:after {
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+}
+
+.header-mobile {
+	min-height: 100vh;
+	background-color: $color-dark-blue;
+	background-image: url("../img/header-bg.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: -724px 0px;
+	position: relative;
+
+	&.navSticky {
+		padding-top: $navBarHeight;
+	}
+
+	.header-container {
+		padding: 0 40px;
+
+		.header-plus-img {
+			position: absolute;
+			width: 100%;
+			top: 33%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			@keyframes zoom-in-mobile {
+				from {
+					width: 100%;
+				}
+
+				to {
+					width: 115%;
+				}
+			}
+
+			&.battement {
+				animation-name: zoom-in-mobile;
+				animation-delay: 0.2s;
+				animation-direction: alternate;
+				animation-duration: 2s;
+				animation-iteration-count: 6;
+			}
+		}
+
+		.donnez {
+			padding-top: 280px;
+			font-size: 16px;
+			color: white;
+			display: block;
+			text-transform: uppercase;
+			position: relative;
+			z-index: 3;
+			line-height: 1.2;
+		}
+
+		.plus {
+			font-size: 42px;
+			color: white;
+			display: block;
+			text-transform: uppercase;
+			position: relative;
+			z-index: 3;
+			line-height: 1.0;
+
+			img {
+				width: 30px;
+			}
+
+			.force {
+				font-weight: bold;
+			}
+		}
+
+		.pour-prendre {
+			font-size: 20px;
+			color: $white;
+			position: relative;
+			z-index: 3;
+			line-height: 1.2;
+		}
+	}
+
+
+
+
+
+	.header-container-france,
+	.header-container-syrie,
+	.header-container-palestine {
+		position: absolute;
+		top: $navBarHeight;
+		left: 200%;
+		width: 100%;
+		height: 100%;
+		color: $white;
+
+		padding: 0 40px;
+
+		.header-plus-img {
+			position: absolute;
+			width: 100%;
+			top: 33%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.donnez {
+			padding-top: 280px;
+			font-size: 16px;
+			color: white;
+			display: block;
+			text-transform: uppercase;
+			position: relative;
+			z-index: 3;
+			line-height: 1.2;
+		}
+
+		.plus {
+			font-size: 30px;
+			color: white;
+			display: block;
+			text-transform: uppercase;
+			position: relative;
+			z-index: 3;
+			line-height: 1.0;
+
+			img {
+				width: 30px;
+			}
+
+			.force {
+				font-weight: bold;
+			}
+		}
+
+		.pour-prendre {
+			font-size: 30px;
+			color: $white;
+			position: relative;
+			z-index: 3;
+			line-height: 1.2;
+			display: block;
+		}
+
+		.en-pays {
+			font-size: 50px;
+			text-transform: uppercase;
+			line-height: 1.2;
+		}
+
+		.download {
+			display: flex;
+			flex-direction: row;
+			padding: 10px;
+			border: 1px solid white;
+
+			p {
+				color: $white;
+				font-size: 15px;
+				text-transform: uppercase;
+				align-items: center;
+				line-height: 1.2;
+			}
+
+			img {
+				height: 30px;
+			}
+		}
+
+		.my-container {
+			max-width: 400px;
+			padding-bottom: 40px;
+
+			.red-box-out {
+				margin: 20px 0;
+				border: 1px solid $color-urgency;
+				padding: 2px;
+
+				.red-box-in {
+					background: $color-urgency;
+					padding: 10px;
+				}
+			}
+
+			.nous-avons-besoin {
+				font-size: 22px;
+				font-weight: bold;
+				line-height: 1.2;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+
+			.text {
+				font-size: 20px;
+				line-height: 1.2;
+			}
+
+			.bullet-point {
+				display: block;
+				position: relative;
+				padding-left: 50px;
+				margin: 14px 0;
+
+				&:before,
+				&:after {
+					position: absolute;
+					left: 24px;
+					top: 7px;
+					content: " ";
+					height: 10px;
+					width: 2px;
+					background-color: $color-urgency;
+					border-radius: 3px;
+				}
+
+				&:before {
+					transform: rotate(0deg);
+				}
+				&:after {
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+
+	.header-container-france {
+		.header-plus-img {
+			top: 20%;
+		}
+	}
+	.header-container-syrie {
+		.header-plus-img {
+			top: 20%;
+		}
+	}
+	.header-container-palestine {
+		.header-plus-img {
+			top: 20%;
 		}
 	}
 }

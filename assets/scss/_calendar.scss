@@ -45,6 +45,8 @@
         text-transform: uppercase;
         position: relative;
         cursor: pointer;
+        min-width: 135px;
+        text-align: center;
 
         .picto {
             position: relative;
@@ -62,6 +64,32 @@
 
         &.active {
             opacity: 1.0;
+
+            .triangle-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                
+                .line {
+                    display: block;
+                    height: 3px;
+                    background-color: $color-dark-blue;
+                    border-radius: 3px;
+                    width: 100%;
+                }
+    
+                .triangle {
+                    display: inline-block;
+                    width: 0px;
+                    height: 0px;
+                    border-top: 10px solid $color-dark-blue;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid transparent;
+                    border-left: 10px solid transparent;
+        
+                }
+            }
         }
     }
 
@@ -92,13 +120,20 @@
             text-transform: uppercase;
             line-height: 0.9;
         }
+    }
+
+    .bloc-zone {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
         .zone {
             color: $color-dark-blue;
             font-size: 22px;
             text-transform: uppercase;
             font-weight: bold;
-            margin-top: 8px;
         }
 
         .interrogation {
@@ -111,6 +146,28 @@
 
         &.hidden {
             display: none;
+        }
+    }
+
+     //# FIX MOBILE
+	@include media-breakpoint-down(sm) {
+		& {
+            .title {
+                line-height: 1.2;
+            }
+
+            .bloc-zone {
+                flex-direction: row;
+
+                .zone {
+                    margin-right: 10px;
+                }
+            }
+
+            .date-zone-container:not(:last-child) {
+                border-bottom: 2px solid $color-light-grey;
+                border-radius: 2px;
+            }
         }
     }
 }

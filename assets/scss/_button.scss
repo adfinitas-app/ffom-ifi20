@@ -23,8 +23,55 @@
 	&:hover {
 		text-decoration: none;
 		color: $white;
+		transform: scale(1.1);
 	}
 }
+
+.button-don-refonte {
+	background-color: $color-urgency;
+	padding: 2px;
+	position: relative;
+	transition: transform $transitionTime;
+	display: flex;
+	align-items: center;
+	min-width: 180px;
+	min-height: 44px;
+
+	.cross {  
+		position: absolute;
+		top: 18px;
+		left: 20px;
+	}
+	
+	.text {
+		color: $white;
+		text-transform: uppercase;
+		font-size: 12px;
+		font-family: $defaultFont;
+		font-weight: bold;
+	}
+	
+	.my-border-white {
+		width: 100%;
+		height: 100%;
+		border: 2px solid white;
+		padding: 7px 34px;
+		transition: padding $transitionTime, margin $transitionTime, border-color 0.6s;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: $white;
+		transform: scale(1.1);		
+
+		.my-border-white {
+			padding: 0;
+			margin: 7px 34px;
+			border-color: transparent;
+		}
+	}
+}
+
 
 .button-don-virement {
 	outline: none;
