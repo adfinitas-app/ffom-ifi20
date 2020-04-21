@@ -48,6 +48,12 @@ function images(cb) {
       .pipe(dest(`${BUILD_FOLDER}/assets/img`));
 }
 
+// Copy docs
+function docs(cb) {
+    return src(['assets/docs/**/*'])
+      .pipe(dest(`${BUILD_FOLDER}/assets/docs`));
+}
+
 // Inline CSS
 function inlineCss(cb) {
     return src(`${BUILD_FOLDER}/**/*.css`)
@@ -83,13 +89,15 @@ function mywatch() {
     watch('assets/scss/**/*.scss').on('all', series(compileSass, inlineCss, browser.reload));
     watch('assets/js/**/*.js').on('all', series(inlineJs, browser.reload));
     watch('assets/img/**/*').on('all', series(images, browser.reload));
+    watch('assets/docs/**/*').on('all', series(docs, browser.reload));
 }
 
 exports.clean = clean;
 exports.index = index;
 exports.compileSass = compileSass;
 exports.images = images;
+exports.docs = docs;
 exports.inlineCss = inlineCss;
 exports.inlineJs = inlineJs;
 
-exports.default = series(clean, index, compileSass, inlineCss, inlineJs, images, server, mywatch);
+exports.default = series(clean, index, compileSass, inlineCss, inlineJs, images, docs, server, mywatch);

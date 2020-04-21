@@ -22,50 +22,46 @@ $(document).ready(function () {
 	//ACTIVATE TOOLTIP
 	$('.defiscalisation [data-toggle="tooltip"]').tooltip();
 
-    function isElementInViewport(elem) {
-        var $elem = $(elem);
-    
-        // Get the scroll position of the page.
-        var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-        var viewportTop = $(scrollElem).scrollTop();
-        var viewportBottom = viewportTop + $(window).height();
-    
-        // Get the position of the element on the page.
-        var elemTop = Math.round( $elem.offset().top );
-        var elemBottom = elemTop + $elem.height();
-    
-        return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-    }
+	function isElementInViewport(elem) {
+		var $elem = $(elem);
+
+		// Get the scroll position of the page.
+		var viewportTop = $(window).scrollTop();
+		var viewportBottom = viewportTop + $(window).height();
+
+		// Get the position of the element on the page.
+		var elemTop = Math.round($elem.offset().top);
+		var elemBottom = elemTop + $elem.height();
+
+		return elemTop < viewportBottom && elemBottom > viewportTop;
+	}
 
 	//init
 	//$(".don-type-item").first().tooltip("show");
 	$($(".don-type-item").first().data("target")).show();
 
-    // Capture scroll events
-    const circles = '.circles';
-    let animated = false;
+	// Capture scroll events
+	const circles = ".circles";
+	let animated = false;
 
-    if (animated == false && isElementInViewport(circles)) {
-        // Start the animation
-        fadeInCircles();
-        animated = true;
-    }
+	if (animated == false && isElementInViewport(circles)) {
+		// Start the animation
+		fadeInCircles();
+		animated = true;
+	}
 
-    $(window).scroll(function(){
-    
-        if (animated == false && isElementInViewport(circles)) {
-            // Start the animation
-	        fadeInCircles();
-        }
-    });
+	$(window).scroll(function () {
+		if (animated == false && isElementInViewport(circles)) {
+			// Start the animation
+			fadeInCircles();
+		}
+	});
 
 	//FUNCTION TO MAKE THE CIRCLES APPEAR ONE BY ONE
 	function fadeInCircles() {
 		$(".circle-left .circle-wrapper").fadeIn(700, function () {
 			$(".circle-middle .circle-wrapper").fadeIn(700, function () {
-				$(".circle-right .circle-wrapper").fadeIn(700, function () {
-                
-                });
+				$(".circle-right .circle-wrapper").fadeIn(700, function () {});
 			});
 		});
 	}
@@ -105,6 +101,22 @@ $(document).ready(function () {
 
 		//Modify deduction amounts
 		// target = #don-type-ifi | #don-type-ir | #don-type-is
+		let deductionTypetext = "";
+
+		switch (target) {
+			case "#don-type-ifi":
+				deductionTypetext = "IFI";
+				break;
+			case "#don-type-ir":
+				deductionTypetext = "IR";
+				break;
+			case "#don-type-is":
+				deductionTypetext = "IS";
+				break;
+			default:
+				break;
+		}
+		$('#deduction-type-text').text(deductionTypetext);
 		if (!deductionValues[target]) {
 			return;
 		}
@@ -137,15 +149,11 @@ $(document).ready(function () {
 		if (isNaN(topRightAmount) || isNaN(leftBottomAmount)) return;
 		isInt(leftBottomAmount)
 			? $(".circle-right .amount-left-bottom").text(leftBottomAmount + "€")
-			: $(".circle-right .amount-left-bottom").text(
-					leftBottomAmount.toFixed(2) + "€"
-			  );
+			: $(".circle-right .amount-left-bottom").text(leftBottomAmount.toFixed(2) + "€");
 
 		isInt(topRightAmount)
 			? $(".circle-right .amount-right-top").text(topRightAmount + "€")
-			: $(".circle-right .amount-right-top").text(
-					topRightAmount.toFixed(2) + "€"
-			  );
+			: $(".circle-right .amount-right-top").text(topRightAmount.toFixed(2) + "€");
 	});
 
 	function modifyCircleValue(circle, amounts) {

@@ -12,6 +12,7 @@ $(document).ready(function() {
     }
 
     function showHeaderPanel(country) {
+        isChangingPanel = true;
         const linkElem = $(`.link[data-country="${country}"]`);
 
         linkElem.siblings('.link').removeClass('active');
@@ -20,26 +21,25 @@ $(document).ready(function() {
         const oldElem = $('.header-active');
         const elem = $(`.header-container-${country}`);
 
-        elem.css({left: '200%', top: 'unset'});
+        oldElem.removeClass('header-active');
+        elem.addClass('header-active');
 
-        oldElem.css('position', 'absolute');
-        oldElem.animate({left: `-3000px`}, function() {
-            oldElem.css('top', '-3000px');
-            oldElem.removeClass('header-active');
-        });
-        elem.animate({left: '0'}, function() {
-            elem.css('position', 'unset');
+        oldElem.fadeOut('slow', function() {
             $('header.header-desktop').css('background-image', `url("${data[country].headerImg}")`)
-            elem.addClass('header-active');
+            elem.fadeIn('slow', function() {
+                hasChangedPanel = true;
+                isChangingPanel = false;
 
+                //oldElem.css('display', 'none');
+                //elem.css('display', 'block');
+            });
         });
-        hasChangedPanel = true;
     }
 
     $('.nav-desktop .link').on('click', function(e) {
         e.preventDefault();
 
-        if ($(this).hasClass('active'))
+        if ($(this).hasClass('active') || isChangingPanel === true)
             return ;
         showHeaderPanel($(this).data('country'));
     });
@@ -49,16 +49,17 @@ $(document).ready(function() {
         const bandeauHeight = $('.bandeau-covid').height();
 
         closeNavMobile(bandeauHeight, false);
-        if ($(this).hasClass('active'))
+        if ($(this).hasClass('active') || isChangingPanel === true)
             return;
     
         showHeaderPanel($(this).data('country'));
     });
 
     let hasChangedPanel = false;
+    let isChangingPanel = false;
 
     setTimeout(function() {
         if (hasChangedPanel === false) 
             showHeaderPanel('france');
-    }, 7000);
+    }, 12000);
 });

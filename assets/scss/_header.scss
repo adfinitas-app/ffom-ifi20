@@ -100,15 +100,16 @@
 	.header-container-france,
 	.header-container-syrie,
 	.header-container-palestine {
-		position: absolute;
+		//position: relative;
 		top: $navBarHeight;
-		left: 200%;
+		left: 0;
 		width: 100%;
 		height: 100%;
 		color: $white;
+		display: none;
 
 		.my-right {
-			padding: 100px 0;
+			padding: 130px 0 100px 0;
 		}
 
 		.plus {
@@ -158,12 +159,13 @@
 			font-size: 93px;
 			text-transform: uppercase;
 			line-height: 1.2;
+			margin: 5px 0;
 		}
 
 		.download {
 			display: flex;
 			flex-direction: row;
-			padding: 10px;
+			padding: 15px;
 			border: 1px solid white;
 
 			p {
@@ -322,12 +324,13 @@
 	.header-container-france,
 	.header-container-syrie,
 	.header-container-palestine {
-		position: absolute;
-		top: $navBarHeight;
-		left: 200%;
+		//position: absolute;
+		//top: $navBarHeight;
+		//left: 0;
 		width: 100%;
 		height: 100%;
 		color: $white;
+		display: none;
 
 		padding: 0 40px;
 
@@ -386,7 +389,7 @@
 		.download {
 			display: flex;
 			flex-direction: row;
-			padding: 10px;
+			padding: 15px;
 			border: 1px solid white;
 
 			p {

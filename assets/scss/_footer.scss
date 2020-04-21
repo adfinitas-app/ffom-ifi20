@@ -42,3 +42,45 @@ footer {
         }
     }
 }
+
+#cguModal {
+    .modal-dialog {
+        max-width: 960px;
+    }
+    
+    .modal-body {
+        .my-container {
+            padding: 40px 120px;
+
+            .main-title {
+                font-size: 40px;
+                text-align: center;
+                margin-bottom: 40px;
+    
+                .my-border {
+                    display: inline-block;
+                    border-bottom: 5px solid rgba(0, 0, 0, 0.10);
+    
+                    span {
+                        color: $color-urgency;
+                    }
+                }
+            }
+    
+            .p-title {
+                font-size: 22px;
+                color: $color-dark-blue;     
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.2;
+            }
+    
+            .p-text {
+                font-size: 22px;
+                color: $color-dark-blue;
+                margin-bottom: 20px;
+                line-height: 1.2;
+            }
+        }
+    }  
+}
