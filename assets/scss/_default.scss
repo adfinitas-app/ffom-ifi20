@@ -58,3 +58,9 @@ $font-sizes
     background-color: white !important;
   }
 }
+
+@include media-breakpoint-down(sm) {
+  .modal-dialog {
+    padding-top: $navBarHeight;
+  }
+}

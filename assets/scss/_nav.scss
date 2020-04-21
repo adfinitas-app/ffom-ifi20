@@ -52,13 +52,19 @@ nav.nav-desktop {
         top: 0px;
         left: 0px;
     }
+
     height: $navBarHeight;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 15px;
     background-image: linear-gradient(#4F627B 30%, transparent);
+
+    .nav-mobile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
 
     .button-don-refonte {
         margin-left: auto;

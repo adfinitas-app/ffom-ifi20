@@ -84,3 +84,14 @@ footer {
         }
     }  
 }
+
+@include media-breakpoint-down(sm) {
+    #cguModal {
+
+        .modal-body {
+            .my-container {
+                padding: 40px 20px;
+            }
+        }
+    }
+}
