@@ -52,18 +52,6 @@ nav.nav-desktop {
                 margin-bottom: 2px;
                 
                 &.effect-blinking {
-                    @keyframes blink-text {
-                        from {
-                            opacity: 100%;
-                        }
-                        50% {
-                            opacity: 30%;
-                        }
-                        to {
-                            opacity: 100%;
-                        }
-                    }
-
                     animation: blink-text 1.5s infinite;
                 }
             }

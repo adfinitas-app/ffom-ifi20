@@ -71,7 +71,9 @@ $(document).ready(function() {
                 setTimeout(() => {
                     $('.link-croix').fadeIn(600, 'swing', function() {
                         $('.link-croix').addClass('effect-blinking');
-                        $('.battement').removeClass('effect-battement');
+                        setTimeout(() => {
+                            $('.battement').removeClass('effect-battement');
+                        }, 10000);
                     });
                 }, 1500);
             }, effectBattementTime);

@@ -103,3 +103,26 @@
 	}
 }
 
+@include media-breakpoint-down(xs) {
+    .button-don-refonte {
+		.my-border-white {
+			width: 100%;
+			height: 100%;
+			border: 2px solid white;
+			padding: 7px 30px;
+			transition: padding $transitionTime, margin $transitionTime, border-color 0.6s;
+		}
+	
+		&:hover {
+			text-decoration: none;
+			color: $white;
+			transform: scale(1.1);		
+	
+			.my-border-white {
+				padding: 0;
+				margin: 7px 30px;
+				border-color: transparent;
+			}
+		}
+	}
+}

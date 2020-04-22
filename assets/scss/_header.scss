@@ -46,16 +46,6 @@
 			top: 50%;
 			transform: translate(-50%, -50%);
 
-			@keyframes zoom-in {
-				from {
-					width: 767px;
-				}
-
-				to {
-					width: 850px;
-				}
-			}
-
 			&.effect-battement {
 				animation-name: zoom-in;
 				animation-delay: 0.2s;
@@ -74,27 +64,6 @@
 			top: 25%;
 			z-index: 2;
 			max-width: 208px;
-
-			/* The typing effect */
-			@keyframes typing {
-				from {
-					width: 0;
-				}
-				to {
-					width: 100%;
-				}
-			}
-
-			/* The typewriter cursor effect */
-			@keyframes blink-caret {
-				from,
-				to {
-					border-color: transparent;
-				}
-				50% {
-					border-color: orange;
-				}
-			}
 
 			&.effect-typing {
 				overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -282,36 +251,26 @@
 	}
 
 	.header-container {
-		padding: 0 40px;
+		padding: 0 40px 20px 40px;
 
 		.header-plus-img {
 			position: absolute;
-			width: 100%;
-			top: 33%;
+			width: 70%;
+			top: 20%;
 			left: 50%;
-			transform: translate(-50%, -50%);
-
-			@keyframes zoom-in-mobile {
-				from {
-					width: 100%;
-				}
-
-				to {
-					width: 115%;
-				}
-			}
-
-			&.battement {
+			transform: translate(-50%, 0%);
+			transition: transform $transitionTime;
+			
+			&.effect-battement {
 				animation-name: zoom-in-mobile;
-				animation-delay: 5s;
-				animation-direction: alternate;
-				animation-duration: 2s;
-				animation-iteration-count: 6;
+				animation-delay: 0.2s;
+				animation-duration: 5s;
+				animation-iteration-count: 12;
 			}
 		}
 
 		.donnez {
-			padding-top: 280px;
+			margin-top: 280px;
 			font-size: 16px;
 			color: white;
 			display: block;
@@ -319,6 +278,16 @@
 			position: relative;
 			z-index: 3;
 			line-height: 1.2;
+			display: block;
+
+			&.effect-typing {
+				overflow: hidden; /* Ensures the content is not revealed until the animation */
+				border-right: 0.15em solid orange; /* The typwriter cursor */
+				white-space: nowrap; /* Keeps the content on a single line */
+				//margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+				//letter-spacing: 0.15em; /* Adjust as needed */
+				animation: typing 5.5s steps(60, end), blink-caret 0.5s step-end 6;
+			}
 		}
 
 		.plus {

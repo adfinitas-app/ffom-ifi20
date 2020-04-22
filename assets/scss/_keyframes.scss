@@ -1,0 +1,54 @@
+@keyframes zoom-in {
+    from {
+        width: 767px;
+    }
+
+    to {
+        width: 850px;
+    }
+}
+
+@keyframes zoom-in-mobile {
+    from {
+        transform: translate(-50%, 0%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, 0%) scale(1.15);
+    }
+    to{
+        transform: translate(-50%, 0%) scale(1);
+    }
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+}
+
+@keyframes blink-text {
+    from {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 30%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
