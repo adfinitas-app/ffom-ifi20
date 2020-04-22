@@ -27,21 +27,25 @@
 		<header class="header-desktop d-none d-md-block">
 			<!-- NAV DESKTOP-->
 			<nav class="nav-desktop d-none d-md-flex">
-				<a href="#">
+				<a href="#panel-default" class="link" data-country="default">
 					<img src="assets/img/logo.png" alt="logo" />
 				</a>
-				<div class="links">
-					<a href="#panel-france" class="link anchor" data-country="france"
-						><span>En france</span></a
-					>
-					<a href="#panel-syrie" class="link anchor" data-country="syrie"
-						><span>En Syrie</span></a
-					>
-					<a href="#panel-palestine" class="link anchor" data-country="palestine"
-						><span>En Palestine</span></a
-					>
+				<div class="links-container">
+					<div class="links">
+						<a href="#panel-france" class="link anchor d-flex flex-column justify-content-center align-items-center" data-country="france"
+							>
+							<img src="assets/img/picto/link-croix.png" class="link-croix"/>
+							<span>En france</span></a
+						>
+						<a href="#panel-syrie" class="link anchor" data-country="syrie"
+							><span>En Syrie</span></a
+						>
+						<a href="#panel-palestine" class="link anchor" data-country="palestine"
+							><span>En Palestine</span></a
+						>
+					</div>
 				</div>
-				<a href="#" target="_blank" class="button-don-refonte">
+				<a href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/" target="_blank" class="button-don-refonte transmit-query-var">
 					<div class="my-border-white">
 						<img src="assets/img/picto/croix.png" alt="+" class="cross" />
 						<span class="text fs-14">Je fais un don IFI</span>
@@ -51,7 +55,7 @@
 			<!-- NAV DESKTOP -->
 
 			<!-- HEADER CONTAINER -->
-			<div class="header-container header-active">
+			<div class="header-container header-active" id="panel-default">
 				<img
 					src="assets/img/header-plus-palestin.png"
 					class="header-plus-img palestin battement"
@@ -103,6 +107,7 @@
 									href="assets/docs/FRANCE.pdf"
 									class="download"
 									download="FRANCE.pdf"
+									target="_blank"
 								>
 									<img src="assets/img/picto/header-download.png" class="mx-1" />
 									<p class="mx-1">
@@ -166,6 +171,7 @@
 									href="assets/docs/SYRIE.pdf"
 									class="download"
 									download="SYRIE.pdf"
+									target="_blank"
 								>
 									<img src="assets/img/picto/header-download.png" class="mx-1" />
 									<p class="mx-1">
@@ -235,6 +241,7 @@
 									href="assets/docs/PALESTINE.pdf"
 									class="download"
 									download="PALESTINE.pdf"
+									target="_blank"
 								>
 									<img src="assets/img/picto/header-download.png" class="mx-1" />
 									<p class="mx-1">
@@ -280,7 +287,7 @@
 			<!-- NAV MOBILE-->
 			<nav class="nav-mobile d-flex d-md-none">
 				<div class="nav-mobile-container">
-					<a href="#">
+					<a href="#panel-default" class="link" data-country="default">
 						<img src="assets/img/logo-mobile.png" alt="logo" />
 					</a>
 					<button class="hamburger hamburger--squeeze" type="button">
@@ -288,7 +295,7 @@
 							<span class="hamburger-inner"></span>
 						</span>
 					</button>
-					<a href="#" target="_blank" class="button-don-refonte">
+					<a href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/" target="_blank" class="button-don-refonte">
 						<div class="my-border-white">
 							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
 							<span class="text fs-14">Je fais un don IFI</span>
@@ -316,7 +323,7 @@
 						><span>En Palestine</span></a
 					>
 				</div>
-				<a href="#" target="_blank" class="button-don-refonte mt-3">
+				<a href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/" target="_blank" class="button-don-refonte mt-3">
 					<div class="my-border-white text-center">
 						<img src="assets/img/picto/croix.png" alt="+" class="cross" />
 						<span class="text fs-14">Je fais un don IFI</span>
@@ -326,7 +333,7 @@
 			<!-- NAV MOBILE -->
 
 			<!-- HEADER CONTAINER -->
-			<div class="header-container header-active">
+			<div class="header-container header-active" id="panel-default-mobile">
 				<img src="assets/img/header-plus-palestin.png" class="header-plus-img battement" />
 
 				<span class="donnez">Donnez-nous</span>
@@ -369,7 +376,7 @@
 				>
 				<span class="en-pays">En <b>france</b></span>
 				<div class="d-inline-block mt-3">
-					<a href="assets/docs/FRANCE.pdf" class="download" download="FRANCE.png">
+					<a href="assets/docs/FRANCE.pdf" class="download" download="FRANCE.png" target="_blank">
 						<img src="assets/img/picto/header-download.png" class="mx-1" />
 						<p class="mx-1">
 							Je télécharge la fiche<br class="d-none d-md-block" />
@@ -417,7 +424,7 @@
 				<span class="pour-prendre">POUR PORTER SECOURS AUX VICTIMES DE LA GUERRE</span>
 				<span class="en-pays">En <b>Syrie</b></span>
 				<div class="d-inline-block mt-3">
-					<a href="assets/docs/SYRIE.pdf" class="download" download="SYRIE.pdf">
+					<a href="assets/docs/SYRIE.pdf" class="download" download="SYRIE.pdf" target="_blank">
 						<img src="assets/img/picto/header-download.png" class="mx-1" />
 						<p class="mx-1">
 							Je télécharge la fiche<br class="d-none d-md-block" />
@@ -467,7 +474,7 @@
 				<span class="pour-prendre">pour protéger la vie de celles qui la donnent</span>
 				<span class="en-pays">En <b>palestine</b></span>
 				<div class="d-inline-block mt-3">
-					<a href="assets/docs/PALESTINE.pdf" class="download" download="PALESTINE.pdf">
+					<a href="assets/docs/PALESTINE.pdf" class="download" download="PALESTINE.pdf" target="_blank">
 						<img src="assets/img/picto/header-download.png" class="mx-1" />
 						<p class="mx-1">
 							Je télécharge la fiche<br class="d-none d-md-block" />
@@ -659,7 +666,7 @@
 			</div>
 
 			<!-- DON TYPE CONTENT IFI -->
-			<div class="don-type-content" id="don-type-ifi">
+			<div class="don-type-content active" id="don-type-ifi">
 				<div class="d-flex flex-row flex-wrap justify-content-center align-items-start">
 					<span class="percent">75%</span>
 					<span class="limit"
@@ -885,7 +892,7 @@
 			</div>
 
 			<!-- Declaration type online -->
-			<div id="declaration-type-online" class="declaration-type-content">
+			<div id="declaration-type-online" class="declaration-type-content active">
 				<div class="container">
 					<div class="row mt-5">
 						<div class="col-sm-12 col-md-6 col-lg-4 date-zone-container">
@@ -1052,6 +1059,7 @@
 											href="assets/docs/publication.pdf"
 											download="publication.pdf"
 											class="d-flex flex-row align-items-center"
+											target="_blank"
 										>
 											<img
 												class="mr-2"
@@ -1093,7 +1101,7 @@
 							<a data-toggle="modal" href="#cguModal">
 								Conditions générales d'utilisation
 							</a>
-							<a data-toggle="modal" href="#cguModal">
+							<a data-toggle="modal" href="#persoDataModal">
 								Données personnelles
 							</a>
 							<a href="https://fondationordredemalte.org">Site institutionnel</a>
@@ -1142,13 +1150,13 @@
 											personnel
 										</p>
 										<p class="nom">
-											Dominique Jan-Nassé, Directrice de la Fondation, est à votre à votre disposition pour vous transmettre nos coordonnées bancaires
+											Dominique Jan-Nassé, Directrice de la Fondation, est à votre à votre disposition pour vous transmettre nos coordonnées bancaires.
 										</p>
 										<p class="email">
 											Vous pouvez la contacter par email : <a href="mailto:d.jan@ordredemaltefrance.org">d.jan@ordredemaltefrance.org</a>
 										</p>
 										<p class="tel">
-											soit par téléphone au <a href="tel:+33 1 55 74 53 41">+33 1 55 74 53 41</a> 
+											soit par téléphone au <a href="tel:+33 1 55 74 53 41">+33 1 55 74 53 41</a>.
 										</p>
 									</div>
 								</div>
@@ -1189,6 +1197,36 @@
 			</div>
 		</div>
 		<!-- CGU MODAL -->
+
+		<!-- PERSONNAL DATA MODAL -->
+		<div
+			class="modal fade"
+			id="persoDataModal"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="persoDataModalTitle"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<div class="my-container">
+							<p class="main-title"><span class="my-border">Données <span>personnelles</span></span></p>
+
+							<p class="p-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<p class="p-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, numquam in quas quos quasi officia voluptates quam ut aut, inventore illo alias nam porro repudiandae sint sequi odio quae tenetur.</p>
+	
+							<p class="p-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<p class="p-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, numquam in quas quos quasi officia voluptates quam ut aut, inventore illo alias nam porro repudiandae sint sequi odio quae tenetur.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- PERSONNAL DATA MODAL -->
 
 		<!-- JS -->
 		<script

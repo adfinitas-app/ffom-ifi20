@@ -1,5 +1,8 @@
 $(document).ready(function() {
     const data = {
+        'default': {
+            headerImg: '../assets/img/header-bg.png'           
+        },
         'france': {
             headerImg: '../assets/img/header-bg-france.png'           
         },
@@ -15,11 +18,11 @@ $(document).ready(function() {
         isChangingPanel = true;
         const linkElem = $(`.link[data-country="${country}"]`);
 
-        linkElem.siblings('.link').removeClass('active');
+        $('.link').removeClass('active');
         linkElem.addClass('active');
 
         const oldElem = $('.header-active');
-        const elem = $(`.header-container-${country}`);
+        const elem = country === 'default' ? $('.header-container') : $(`.header-container-${country}`);
 
         oldElem.removeClass('header-active');
         elem.addClass('header-active');
@@ -39,12 +42,13 @@ $(document).ready(function() {
     $('.nav-desktop .link').on('click', function(e) {
         e.preventDefault();
 
+        $('.link-croix').fadeOut(600);
         if ($(this).hasClass('active') || isChangingPanel === true)
             return ;
         showHeaderPanel($(this).data('country'));
     });
 
-    $('.nav-mobile-expanded .link').on('click', function(e) {
+    $('.nav-mobile .link, .nav-mobile-expanded .link').on('click', function(e) {
         e.preventDefault();
         const bandeauHeight = $('.bandeau-covid').height();
 
@@ -55,11 +59,27 @@ $(document).ready(function() {
         showHeaderPanel($(this).data('country'));
     });
 
+    function startHeaderAnimation() {
+        $('.donnez').addClass('effect-typing');
+        const effectTypingTime = 2000;
+        const effectBattementTime = 2000;
+        setTimeout(() => {
+            $('.donnez').css('border-right', 'none');
+            $('.battement').addClass('effect-battement');
+            setTimeout(() => {
+                $('.pour-prendre-container').fadeIn(600);
+                setTimeout(() => {
+                    $('.link-croix').fadeIn(600, 'swing', function() {
+                        $('.link-croix').addClass('effect-blinking');
+                        $('.battement').removeClass('effect-battement');
+                    });
+                }, 1500);
+            }, effectBattementTime);
+        }, effectTypingTime);
+    }
+
     let hasChangedPanel = false;
     let isChangingPanel = false;
-
-    setTimeout(function() {
-        if (hasChangedPanel === false) 
-            showHeaderPanel('france');
-    }, 12000);
+    
+    startHeaderAnimation();
 });
