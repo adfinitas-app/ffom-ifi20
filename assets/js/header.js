@@ -62,19 +62,22 @@ $(document).ready(function() {
     function startHeaderAnimation() {
         $('.donnez').addClass('effect-typing');
         const effectTypingTime = 2000;
-        const effectBattementTime = 2000;
+        const effectBattementTime = 1000;
         setTimeout(() => {
             $('.donnez').css('border-right', 'none');
             $('.battement').addClass('effect-battement');
             setTimeout(() => {
-                $('.pour-prendre-container').fadeIn(600);
+                $('.header-container .plus').fadeIn(600);
                 setTimeout(() => {
-                    $('.link-croix').fadeIn(600, 'swing', function() {
-                        $('.link-croix').addClass('effect-blinking');
-                        setTimeout(() => {
-                            $('.battement').removeClass('effect-battement');
-                        }, 10000);
-                    });
+                    $('.pour-prendre-container').fadeIn(600);
+                    setTimeout(() => {
+                        $('.link-croix').fadeIn(600, 'swing', function() {
+                            $('.link-croix').addClass('effect-blinking');
+                            setTimeout(() => {
+                                $('.battement').removeClass('effect-battement');
+                            }, 10000);
+                        });
+                    }, 1500);
                 }, 1500);
             }, effectBattementTime);
         }, effectTypingTime);
