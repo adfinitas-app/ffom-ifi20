@@ -9,6 +9,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const terser = require('gulp-terser');
 const browser = require('browser-sync');
 const useref = require('gulp-useref');
+const babel = require('gulp-babel');
+
 const BUILD_FOLDER = './dist';
 
 // Delete the "dist" folder
@@ -70,8 +72,14 @@ function inlineCss(cb) {
 function inlineJs(cb) {
     return src(`./assets/js/**/*.js`)
         //.pipe(sourcemaps.init())
-        .pipe(terser())
-        .pipe(dest(`${BUILD_FOLDER}/assets/js`))
+        .pipe(babel({presets: ['@babel/preset-env']}))
+        
+        // .pipe(terser({
+        //     parse: {ecma: 2015},
+        //     compress: {ecma: 2015},
+        //     ie8: true
+        //   }))
+        .pipe(dest(`${BUILD_FOLDER}/assets/js`));
         //.pipe(sourcemaps.write())
 }
 

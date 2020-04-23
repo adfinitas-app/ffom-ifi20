@@ -1,1 +1,22 @@
-$(document).ready((function(){$('.calendar [data-toggle="tooltip"]').tooltip();let t=!1;$(".declaration-type-item").on("click",(function(){if(t)return;t=!0,$(this).addClass("active"),$(this).siblings(".declaration-type-item").removeClass("active");const a=$(this).data("target"),e=$(".declaration-type-content.active");e.removeClass("active"),$(a).addClass("active"),e.fadeOut(400,"swing",(function(){$(a).fadeIn(400,"swing",(function(){t=!1}))}))}))}));
+"use strict";
+
+$(document).ready(function () {
+  $('.calendar [data-toggle="tooltip"]').tooltip();
+  var isChangingDeclaration = false;
+  $('.declaration-type-item').on('click', function () {
+    if (isChangingDeclaration) return;
+    isChangingDeclaration = true;
+    $(this).addClass('active');
+    $(this).siblings('.declaration-type-item').removeClass('active');
+    var target = $(this).data('target');
+    var oldElem = $(".declaration-type-content.active");
+    oldElem.removeClass("active");
+    $(target).addClass("active");
+    oldElem.fadeOut(400, 'swing', function () {
+      $(target).fadeIn(400, 'swing', function () {
+        isChangingDeclaration = false;
+      });
+    }); //$(target).siblings('.declaration-type-content').hide();
+    //$(target).show();
+  });
+});
