@@ -16,19 +16,19 @@ $(document).ready(function() {
 
     function showHeaderPanel(country) {
         isChangingPanel = true;
-        const linkElem = $(`.link[data-country="${country}"]`);
+        const linkElem = $('.link[data-country="' + country +'"]');
 
         $('.link').removeClass('active');
         linkElem.addClass('active');
 
         const oldElem = $('.header-active');
-        const elem = country === 'default' ? $('.header-container') : $(`.header-container-${country}`);
+        const elem = country === 'default' ? $('.header-container') : $('.header-container-' + country);
 
         oldElem.removeClass('header-active');
         elem.addClass('header-active');
 
         oldElem.fadeOut('slow', function() {
-            $('header.header-desktop').css('background-image', `url("${data[country].headerImg}")`)
+            $('header.header-desktop').css('background-image', 'url(' + data[country].headerImg + ')')
             elem.fadeIn('slow', function() {
                 hasChangedPanel = true;
                 isChangingPanel = false;
