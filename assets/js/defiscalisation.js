@@ -168,8 +168,12 @@ $(document).ready(function () {
 		}
 		amount = parseInt(amount);
 
-		const topRightAmount = parseFloat((amount * (100 - percent)) / 100);
-		const leftBottomAmount = parseFloat((amount * percent) / 100);
+		let leftBottomAmount = parseFloat((amount * percent) / 100);
+
+		if (leftBottomAmount > 50000)
+			leftBottomAmount = 50000;
+		
+		const topRightAmount = amount - leftBottomAmount;
 
 		if (isNaN(topRightAmount) || isNaN(leftBottomAmount)) return;
 		isInt(leftBottomAmount)

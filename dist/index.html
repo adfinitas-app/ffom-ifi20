@@ -37,7 +37,7 @@
 		<!-- End Google Tag Manager (noscript) -->
 		<!-- --------------------------------------------------------------- -->
 		<!-- BANDEAU COVID -->
-		<div class="bandeau-covid">
+		<div class="bandeau-covid d-none">
 			<p class="text-center fs-17">
 				<span class="exclamation">!</span>
 				<span class="covid">COVID-19</span>
@@ -48,40 +48,54 @@
 		<!-- BANDEAU COVID -->
 		<!-- --------------------------------------------------------------- -->
 		<!-- HEADER DESKTOP -->
-		<header class="header-desktop d-none d-md-block">
+		<header class="header-desktop navSticky d-none d-md-block">
 			<!-- NAV DESKTOP-->
-			<nav class="nav-desktop d-none d-md-flex">
-				<a href="#panel-default" class="link" data-country="default">
-					<img src="assets/img/logo.png" alt="logo" />
-				</a>
-				<div class="links-container">
-					<div class="links">
-						<a
-							href="#panel-france"
-							class="link anchor d-flex flex-column justify-content-center align-items-center"
-							data-country="france"
-						>
-							<img src="assets/img/picto/link-croix.png" class="link-croix" />
-							<span>En france</span></a
-						>
-						<a href="#panel-syrie" class="link anchor" data-country="syrie"
-							><span>En Syrie</span></a
-						>
-						<a href="#panel-palestine" class="link anchor" data-country="palestine"
-							><span>En Palestine</span></a
-						>
-					</div>
+			<nav class="nav-desktop sticky d-none d-md-flex">
+				<!-- BANDEAU COVID -->
+				<div class="bandeau-covid">
+					<p class="text-center fs-17 left">
+						<span class="exclamation">!</span>
+						<span class="covid">COVID-19</span>
+					</p>
+					<p class="text-center fs-17 right">
+						Plus que jamais, pour maintenir nos missions et répondre à toutes les
+						fragilités, nous avons besoin de votre aide. Soutenez-nous.
+					</p>
 				</div>
-				<a
-					href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/"
-					target="_blank"
-					class="button-don-refonte transmit-query-var"
-				>
-					<div class="my-border-white">
-						<img src="assets/img/picto/croix.png" alt="+" class="cross" />
-						<span class="text fs-14">Je fais un don IFI</span>
+				<!-- BANDEAU COVID -->
+				<nav class="navigation">
+					<a href="#panel-default" class="link anchor" data-country="default">
+						<img src="assets/img/logo.png" alt="logo" />
+					</a>
+					<div class="links-container">
+						<div class="links">
+							<a
+								href="#panel-france"
+								class="link anchor d-flex flex-column justify-content-center align-items-center"
+								data-country="france"
+							>
+								<img src="assets/img/picto/link-croix.png" class="link-croix" />
+								<span>En france</span></a
+							>
+							<a href="#panel-syrie" class="link anchor" data-country="syrie"
+								><span>En Syrie</span></a
+							>
+							<a href="#panel-palestine" class="link anchor" data-country="palestine"
+								><span>En Palestine</span></a
+							>
+						</div>
 					</div>
-				</a>
+					<a
+						href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/"
+						target="_blank"
+						class="button-don-refonte transmit-query-var"
+					>
+						<div class="my-border-white">
+							<img src="assets/img/picto/croix.png" alt="+" class="cross" />
+							<span class="text fs-14">Je fais un don IFI</span>
+						</div>
+					</a>
+				</nav>
 			</nav>
 			<!-- NAV DESKTOP -->
 
@@ -167,7 +181,7 @@
 									la rencontre de + de personnes fragiles et assurer notamment :
 									<br /><br />
 								</p>
-								<span class="bullet-point">des consultations médicalisées ;</span>
+								<span class="bullet-point">des consultations médicalisées</span>
 								<span class="bullet-point"
 									>la distribution de sacs de couchage et de produits
 									d’hygiène.</span
@@ -233,7 +247,7 @@
 									<br /><br />
 								</p>
 								<span class="bullet-point"
-									>Secourir dans l’urgence les survivants des massacres en Syrie ;
+									>Secourir dans l’urgence les survivants des massacres en Syrie,
 								</span>
 								<span class="bullet-point"
 									>Mettre en place des cellules d’aide psychologique adaptée au
@@ -314,11 +328,23 @@
 		<!-- HEADER DESKTOP -->
 
 		<!-- HEADER MOBILE -->
-		<header class="header-mobile d-block d-md-none">
+		<header class="header-mobile navSticky d-block d-md-none">
 			<!-- NAV MOBILE-->
-			<nav class="nav-mobile d-flex d-md-none">
+			<nav class="nav-mobile sticky d-flex d-md-none">
+				<!-- BANDEAU COVID -->
+				<div class="bandeau-covid">
+					<p class="text-center fs-17 left">
+						<span class="exclamation">!</span>
+						<span class="covid">COVID-19</span>
+					</p>
+					<p class="text-center fs-17 right">
+						Plus que jamais, pour maintenir nos missions et répondre à toutes les
+						fragilités, nous avons besoin de votre aide. Soutenez-nous.
+					</p>
+				</div>
+				<!-- BANDEAU COVID -->
 				<div class="nav-mobile-container">
-					<a href="#panel-default" class="link" data-country="default">
+					<a href="#panel-default" class="link anchor" data-country="default">
 						<img src="assets/img/logo-mobile.png" alt="logo" />
 					</a>
 					<button class="hamburger hamburger--squeeze" type="button">
@@ -326,11 +352,11 @@
 							<span class="hamburger-inner"></span>
 						</span>
 					</button>
-					<div class="">
+					<div class="ml-auto">
 						<a
-						href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/"
-						target="_blank"
-						class="button-don-refonte"
+							href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/"
+							target="_blank"
+							class="button-don-refonte"
 						>
 							<div class="my-border-white">
 								<img src="assets/img/picto/croix.png" alt="+" class="cross" />
@@ -375,7 +401,10 @@
 
 			<!-- HEADER CONTAINER -->
 			<div class="header-container header-active" id="panel-default-mobile">
-				<img src="assets/img/header-plus-palestin-mobile.png" class="header-plus-img battement" />
+				<img
+					src="assets/img/header-plus-palestin-mobile.png"
+					class="header-plus-img battement"
+				/>
 
 				<span class="donnez">Donnez-nous</span>
 				<span class="plus">
@@ -450,7 +479,7 @@
 						de + de personnes fragiles et assurer notamment :
 						<br /><br />
 					</p>
-					<span class="bullet-point">des consultations médicalisées ;</span>
+					<span class="bullet-point">des consultations médicalisées</span>
 					<span class="bullet-point"
 						>la distribution de sacs de couchage et de produits d’hygiène.</span
 					>
@@ -503,7 +532,7 @@
 						<br /><br />
 					</p>
 					<span class="bullet-point"
-						>Secourir dans l’urgence les survivants des massacres en Syrie ;</span
+						>Secourir dans l’urgence les survivants des massacres en Syrie</span
 					>
 					<span class="bullet-point"
 						>Mettre en place des cellules d’aide psychologique adaptée au traumatisme de
@@ -624,9 +653,9 @@
 									</li>
 									<li>de secourir les survivants des massacres en Syrie ;</li>
 									<li>
-										de sécuriser l’activité de l’Hôpital Maternité de la Sainte Famille à
-										Bethléem pour protéger la vie des futures mères et des
-										prématurés.
+										de sécuriser l’activité de l’Hôpital Maternité de la Sainte
+										Famille à Bethléem pour protéger la vie des futures mères et
+										des prématurés.
 									</li>
 								</ul>
 
@@ -1203,7 +1232,7 @@
 									<div class="bloc-text">
 										<p class="une-question">
 											<span>Une question ?</span> Contactez votre contact
-											personnel.
+											personnel
 										</p>
 										<p class="nom">
 											Dominique Jan-Nassé, Directrice de la Fondation, est à
@@ -1251,50 +1280,107 @@
 							</p>
 
 							<p class="p-text">
-                                      Le présent site est la propriété de la Fondation Française de l'Ordre de Malte, qui en est l'auteur au sens des articles L. 111.1 et suivants du Code de la propriété intellectuelle. Les photographies, textes, slogans, dessins, images, séquences animées sonores ou non ainsi que toutes œuvres intégrées dans le site sont la propriété de la Fondation Française de l'Ordre de Malte ou de tiers ayant autorisé la Fondation Française de l'Ordre de Malte à les utiliser. La reproduction, sur un support papier ou informatique, du site est autorisée sous réserve qu'elle soit strictement réservée à un usage personnel, excluant tout usage à des fins publicitaires et/ou commerciales et/ou d'informations, et qu'elle soit conforme aux dispositions de l'article L122-5 du Code de la Propriété Intellectuelle. A l'exception des dispositions ci-dessus, toute reproduction, représentation, utilisation ou modification, par quelque procédé que ce soit et sur quelque support que ce soit, de tout ou partie du site, de tout ou partie des contenus qui le composent, sans avoir obtenu l'autorisation préalable de la Fondation Française de l'Ordre de Malte, est strictement interdite et constitue un délit de contrefaçon.
+								Le présent site est la propriété de la Fondation Française de
+								l'Ordre de Malte, qui en est l'auteur au sens des articles L. 111.1
+								et suivants du Code de la propriété intellectuelle. Les
+								photographies, textes, slogans, dessins, images, séquences animées
+								sonores ou non ainsi que toutes œuvres intégrées dans le site sont
+								la propriété de la Fondation Française de l'Ordre de Malte ou de
+								tiers ayant autorisé la Fondation Française de l'Ordre de Malte à
+								les utiliser. La reproduction, sur un support papier ou
+								informatique, du site est autorisée sous réserve qu'elle soit
+								strictement réservée à un usage personnel, excluant tout usage à des
+								fins publicitaires et/ou commerciales et/ou d'informations, et
+								qu'elle soit conforme aux dispositions de l'article L122-5 du Code
+								de la Propriété Intellectuelle. A l'exception des dispositions
+								ci-dessus, toute reproduction, représentation, utilisation ou
+								modification, par quelque procédé que ce soit et sur quelque support
+								que ce soit, de tout ou partie du site, de tout ou partie des
+								contenus qui le composent, sans avoir obtenu l'autorisation
+								préalable de la Fondation Française de l'Ordre de Malte, est
+								strictement interdite et constitue un délit de contrefaçon.
+							</p>
 
-                                      </p>
-                            
-                                <p class="p-title">Utilisation des données personnelles</p>
-                                <p class="p-text">Aucune information personnelle n'est collectée à votre insu. Aucune information personnelle n'est cédée à des tiers. Vous pouvez consulter ce site sans révéler votre identité ou donner la moindre information vous concernant. Les informations que vous nous communiquerez seront traitées selon les dispositions légales applicables et notamment de la Loi "Informatique et Libertés" n°78-17 du 6 janvier 1978. Notre politique de protection des données personnelles vous renseigne en détail sur les finalités de notre collecte des données et des fondements juridiques sur lesquels celle-si s'appuie.</p>
-                            
-                                <p class="p-title">Cookies</p>
-                                <p class="p-text">Lors de votre visite sur notre site, nous sommes susceptibles d'implanter un cookie dans votre ordinateur. Un cookie est un petit bloc de données envoyé à votre navigateur par un serveur web et stocké sur le disque dur de votre ordinateur. Le cookie ne nous permet pas de vous identifier personnellement. De manière générale, il nous permet d'enregistrer des informations relatives à la navigation de votre ordinateur sur notre site (les pages que vous avez consultées, la date et l'heure de la consultation, etc.) que nous pourrons lire lors de vos visites ultérieures. Vous pouvez naturellement vous opposer à l'enregistrement de cookies en configurant votre navigateur à partir des "Options" ou "Préférences" de celui-ci. Vous pouvez également supprimer les cookies à tout moment et individuellement en vous rapportant au manuel d'utilisation de votre ordinateur.</p>
-                            
-                                <p class="p-title">Liens hypertextes</p>
-                                <p class="p-text">La mise en place d'un lien hypertexte vers notre site nécessite une autorisation préalable écrite. Faites votre demande à : la Fondation Française de l'Ordre de Malte. La Fondation Française de l'Ordre de Malte ne peut en aucun cas être tenu pour responsables de la mise à disposition des sites qui font l'objet d'un lien hypertexte à partir du site https://ifi.fondationordredemalte.fr et ne peut supporter aucune responsabilité sur le contenu disponible sur ces sites ou à partir de ces sites.</p>
-                             
-                                <p class="p-title">Editeur</p>
-                                <p class="p-text">Ce site est édité par adfinitas, avec l'accord de la Fondation Française de l'Ordre de Malte et pour le compte de la Fondation Française de l'Ordre de Malte.</p>
-                                
-                                <p class="p-title">Directeur de la publication</p>
-                                <p class="p-text">Domine Jan-Nassé, Directeur,
-                                    <br/>
-                                Fondation Française de l'Ordre de Malte.
-                                </p>
-                                
-                                <p class="p-title">Hébergement du site</p>
-                                <p class="p-text">adfinitas
-                                    <br/>Société par actions Simplifiée au capital de 50 000€
-                                    
-                                    <br/><br/><b>Siège social</b>
-                                    <br/>Parc d’Activités « Business Park »
-                                    <br/>40 rue de l'Abbé Lemire
-                                    <br/>
-                                    <br/>59110 LA MADELEINE
-                                    <br/><b>Téléphone :</b> +33.(0)3.28.33.29.60 / Fax : +33.(0)3.28.04.52.41
-                                    <br/><b>SIRET :</b> 432 326 601 00056
-                                    
-                                    <br/><br/><b>Etablissement secondaire</b>
-                                    <br/>132 rue la Fayette
-                                    <br/>75010 Paris
-                                    <br/><b>Téléphone :</b> +33.(0)1.55.33.53.33 / Fax : +33.(0)1.55.33.53.38
-                                    <br/><b>SIRET :</b> 432 326 601 00064
-                                    <br/>Adresse e-mail : adfinitas@adfinitas.fr
-                                </p>
-                                
-                                <p class="p-title">Réalisation du site</p>
-                                <p class="p-text">adfinitas</p>
+							<p class="p-title">Utilisation des données personnelles</p>
+							<p class="p-text">
+								Aucune information personnelle n'est collectée à votre insu. Aucune
+								information personnelle n'est cédée à des tiers. Vous pouvez
+								consulter ce site sans révéler votre identité ou donner la moindre
+								information vous concernant. Les informations que vous nous
+								communiquerez seront traitées selon les dispositions légales
+								applicables et notamment de la Loi "Informatique et Libertés"
+								n°78-17 du 6 janvier 1978. Notre politique de protection des données
+								personnelles vous renseigne en détail sur les finalités de notre
+								collecte des données et des fondements juridiques sur lesquels
+								celle-si s'appuie.
+							</p>
+
+							<p class="p-title">Cookies</p>
+							<p class="p-text">
+								Lors de votre visite sur notre site, nous sommes susceptibles
+								d'implanter un cookie dans votre ordinateur. Un cookie est un petit
+								bloc de données envoyé à votre navigateur par un serveur web et
+								stocké sur le disque dur de votre ordinateur. Le cookie ne nous
+								permet pas de vous identifier personnellement. De manière générale,
+								il nous permet d'enregistrer des informations relatives à la
+								navigation de votre ordinateur sur notre site (les pages que vous
+								avez consultées, la date et l'heure de la consultation, etc.) que
+								nous pourrons lire lors de vos visites ultérieures. Vous pouvez
+								naturellement vous opposer à l'enregistrement de cookies en
+								configurant votre navigateur à partir des "Options" ou "Préférences"
+								de celui-ci. Vous pouvez également supprimer les cookies à tout
+								moment et individuellement en vous rapportant au manuel
+								d'utilisation de votre ordinateur.
+							</p>
+
+							<p class="p-title">Liens hypertextes</p>
+							<p class="p-text">
+								La mise en place d'un lien hypertexte vers notre site nécessite une
+								autorisation préalable écrite. Faites votre demande à : la Fondation
+								Française de l'Ordre de Malte. La Fondation Française de l'Ordre de
+								Malte ne peut en aucun cas être tenu pour responsables de la mise à
+								disposition des sites qui font l'objet d'un lien hypertexte à partir
+								du site https://ifi.fondationordredemalte.fr et ne peut supporter
+								aucune responsabilité sur le contenu disponible sur ces sites ou à
+								partir de ces sites.
+							</p>
+
+							<p class="p-title">Editeur</p>
+							<p class="p-text">
+								Ce site est édité par adfinitas, avec l'accord de la Fondation
+								Française de l'Ordre de Malte et pour le compte de la Fondation
+								Française de l'Ordre de Malte.
+							</p>
+
+							<p class="p-title">Directeur de la publication</p>
+							<p class="p-text">
+								Domine Jan-Nassé, Directeur,
+								<br />
+								Fondation Française de l'Ordre de Malte.
+							</p>
+
+							<p class="p-title">Hébergement du site</p>
+							<p class="p-text">
+								adfinitas <br />Société par actions Simplifiée au capital de 50 000€
+
+								<br /><br /><b>Siège social</b> <br />Parc d’Activités « Business
+								Park » <br />40 rue de l'Abbé Lemire
+								<br />
+								<br />59110 LA MADELEINE <br /><b>Téléphone :</b>
+								+33.(0)3.28.33.29.60 / Fax : +33.(0)3.28.04.52.41 <br /><b
+									>SIRET :</b
+								>
+								432 326 601 00056
+
+								<br /><br /><b>Etablissement secondaire</b> <br />132 rue la Fayette
+								<br />75010 Paris <br /><b>Téléphone :</b> +33.(0)1.55.33.53.33 /
+								Fax : +33.(0)1.55.33.53.38 <br /><b>SIRET :</b> 432 326 601 00064
+								<br />Adresse e-mail : adfinitas@adfinitas.fr
+							</p>
+
+							<p class="p-title">Réalisation du site</p>
+							<p class="p-text">adfinitas</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1321,184 +1407,333 @@
 								<span class="my-border">Données <span>personnelles</span></span>
 							</p>
 
-							<p class="p-text">La Fondation Française de l'Ordre de Malte veille au respect de vos données personnelles en ne collectant que celles strictement nécessaires au regard des finalités pour lesquelles elles sont traitées. La présente politique s’applique à l’ensemble des données collectées par la Fondation Française de l'Ordre de Malte. La Fondation Française de l'Ordre de Malte s'engage à respecter, en tant que responsables de traitement, les dispositions de la Loi n°78-17 du 6 janvier 1978 modifiée et le Règlement général sur la protection des données paru au journal officiel le 27 avril 2016 et en vigueur depuis le 25 mai 2018.</p>
+							<p class="p-text">
+								La Fondation Française de l'Ordre de Malte veille au respect de vos
+								données personnelles en ne collectant que celles strictement
+								nécessaires au regard des finalités pour lesquelles elles sont
+								traitées. La présente politique s’applique à l’ensemble des données
+								collectées par la Fondation Française de l'Ordre de Malte. La
+								Fondation Française de l'Ordre de Malte s'engage à respecter, en
+								tant que responsables de traitement, les dispositions de la Loi
+								n°78-17 du 6 janvier 1978 modifiée et le Règlement général sur la
+								protection des données paru au journal officiel le 27 avril 2016 et
+								en vigueur depuis le 25 mai 2018.
+							</p>
 
-                            <p class="p-title">1. Donnée personnelle</p>
-                            <p class="p-text">C'est toute information relative à une personne physique susceptible d'être identifiée, directement ou indirectement : (ex. nom, no d’immatriculation, no de téléphone, photographie, date de naissance, commune de résidence, empreinte digitale...).</p>
-                            
-                            <p class="p-title">2. Pourquoi certaines de vos données sont-elles collectées ?</p>
-                            <p class="p-text">Les données personnelles recueillies par la Fondation Française de l'Ordre de Malte nous permettent de :</p>
-                            
-                            <ul>
-                                <li>Vous assurer une relation donateurs, testateurs, potentiels donateurs et potentiels testateurs de qualité ;</li>
-                                <li>Vous fournir des services : réponse aux demandes de contact, envoi de documentations ou d'informations ;</li>
-                                <li>Mieux cibler nos campagnes de collecte de dons et en assurer le suivi ;</li>
-                                <li>Vous offrir une navigation optimale sur le site : adaptation de l’affichage en fonction du terminal utilisé, stockage des préférences, etc ;</li>
-                                <li>Vous proposer des fonctions de partage sur les réseaux sociaux ;</li>
-                                <li>Réaliser des analyses statistiques des visites et des remplissage de formulaire sur notre site.</li>
-                            </ul>
-                            
-                            <p class="p-title">3. Quelles données personnelles sont collectées ?</p>
-                            
-                            <p class="p-text">Nous collectons des données personnelles lorsque vous remplissez un de nos formulaires de signature de pétition, de signature de manifeste, d'inscription à la newsletter, de sondage en ligne ou par le biais de cookies. Un "cookie" est un petit fichier informatique, envoyé par le serveur d’un site internet et enregistré sur votre ordinateur, tablette ou téléphone.</p>
-                             
-                            <p class="p-title">Par les formulaires</p>
-                            <p class="p-text">Lorsque vous remplissez un formulaire sur notre site, le caractère obligatoire ou facultatif des données personnelles vous est signalé par un astérisque. Il peut s’agir des données suivantes :</p>
-                            <ul>
-                                <li>Nom et prénom</li>
-                                <li>Adresse postale et ville de résidence</li>
-                                <li>Numéro de téléphone et adresse e-mail</li>
-                            </ul>
-                            
-                            
-                            <p class="p-title">Par les cookies</p>
-                            <p class="p-text">Certaines données sont collectées automatiquement lors de votre visite sur le site, par le biais de cookies.</p>
-                            <p class="p-text">Les cookies ont notamment pour but de collecter des informations relatives à votre navigation : données d’identification électronique (adresse IP, zone géographique), données d’activité sur notre site (pages visitées, paramètres de la visite, etc.). Ils sont gérés par votre navigateur internet.</p>
-                            <p class="p-text">4 types de cookies sont utilisés par notre site :</p>
-                            <ul>
-                                <li>Des cookies internes nécessaires au site pour fonctionner de manière optimale</li>
-                                <li>Des cookies tiers de mesure d’audience et de suivi de votre activité en ligne (Google Analytics, Woopra, adfinitas)</li>
-                                <li>Des cookies tiers destinés à améliorer l’interactivité du site et son contenu multimédia (Facebook, Twitter). >Ces réseaux sociaux peuvent collecter des données relatives à votre navigation sur notre site et associées aux données personnelles dont ils disposent.</li>
-                                <li>Des cookies tiers destinés à mieux cibler nos campagnes marketing (Adroll, Oath, MesOpinions, Orixa Media, TimeOne, Facebook, Bing, Google, etc...)</li>
-                            </ul>
-                             
-                            <p class="p-text">Nous vous invitons à consulter les politiques de protection de la vie privée des différents services tiers nommés ci-dessus afin de prendre connaissance des finalités d'utilisation, notamment publicitaires, des informations de navigation qu'ils peuvent recueillir grâce à ces boutons applicatifs. Ces politiques de protection doivent vous permettre d'exercer vos choix auprès de ces réseaux sociaux, notamment en paramétrant vos comptes d'utilisation de chacun de ces réseaux.</p>
-                            
-                            <table>
-                              <thead>
-                                <tr>
-                                  <th width="100">Prestataires</th>
-                                  <th width="200">Politiques de confidentialité</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>Adroll</td>
-                                  <td>https://www.adroll.com/about/trust-center</td>
-                                </tr>
-                                <tr>
-                                  <td>Google</td>
-                                  <td>https://policies.google.com/technologies/ads</td>
-                                </tr>
-                                <tr>
-                                  <td>Facebook</td>
-                                  <td>https://www.facebook.com/policy</td>
-                                </tr>
-                                <tr>
-                                  <td>AOL (part of Oath)</td>
-                                  <td>https://policies.oath.com/us/en/oath/privacy/index.html</td>
-                                </tr>
-                                <tr>
-                                  <td>Yahoo (part of Oath)</td>
-                                  <td>https://policies.oath.com/us/en/oath/privacy/index.html</td>
-                                </tr>
-                                <tr>
-                                  <td>Bidswitch</td>
-                                  <td>http://www.bidswitch.com/privacy-policy/</td>
-                                </tr>
-                                <tr>
-                                  <td>AppNexus</td>
-                                  <td>https://www.appnexus.com/en/company/platform-privacy-policy</td>
-                                </tr>
-                                <tr>
-                                  <td>LiveRamp</td>
-                                  <td>https://liveramp.com/privacy/</td>
-                                </tr>
-                                <tr>
-                                  <td>Open X</td>
-                                  <td>https://www.openx.com/legal/privacy-policy/</td>
-                                </tr>
-                                <tr>
-                                  <td>Rubicon</td>
-                                  <td>https://rubiconproject.com/privacy-policy/</td>
-                                </tr>
-                                <tr>
-                                  <td>Index</td>
-                                  <td>https://www.index.com/privacy/</td>
-                                </tr>
-                                <tr>
-                                  <td>Pubmatic</td>
-                                  <td>https://pubmatic.com/legal/privacy-policy/</td>
-                                </tr>
-                                <tr>
-                                  <td>Taboola</td>
-                                  <td>https://www.taboola.com/privacy-policy</td>
-                                </tr>
-                                <tr>
-                                  <td>Outbrain</td>
-                                  <td>https://www.outbrain.com/legal/</td>
-                                </tr>
-                                <tr>
-                                  <td>TripleLift</td>
-                                  <td>https://triplelift.com/</td>
-                                </tr>
-                                <tr>
-                                  <td>Pixalate</td>
-                                  <td>http://www.pixalate.com/privacypolicy/</td>
-                                </tr>
-                                <tr>
-                                  <td>adfinitas</td>
-                                  <td>https://www.adfinitas.fr/mentions-legales.html</td>
-                                </tr>
-                                <tr>
-                                  <td>Orixa</td>
-                                  <td>https://www.orixa-media.com/politique-de-confidentialite/</td>
-                                </tr>
-                                <tr>
-                                  <td>MesOpinions</td>
-                                  <td>https://www.mesopinions.com/mentions-legales</td>
-                                </tr>
-                                <tr>
-                                  <td>TimeOne</td>
-                                  <td>https://privacy.timeonegroup.com/?utm_source=privacy_perf</td>
-                                </tr>
-                                <tr>
-                                  <td>Woopra</td>
-                                  <td>https://www.woopra.com/privacy</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                            	
-                            <p class="p-text">Ces cookies peuvent également avoir pour objectif de vous identifier, et/ou d’obtenir vos coordonnées, votre âge, vos revenus, notamment auprès de tiers, en vue d’une réactivation à votre attention, c’est-à-dire d’opérations de prospection qui vous seraient destinées par divers moyens de communication (courrier postal, email ou télémarketing par exemple).</p>
-                             
-                            <p class="p-title">4. Comment refuser les cookies ?</p>
-                            <p class="p-text">Vous pouvez vous opposer à l'enregistrement de cookies en configurant votre navigateur.</p>
-                            <ul>
-                                <li>Pour Internet Explorer™ : https://support.microsoft.com/</li>
-                                <li>Pour Microsoft Edge : https://support.microsoft.com/</li>
-                                <li>Pour Safari™ : https://support.apple.com/</li>
-                                <li>Pour Chrome™ : https://support.google.com/</li>
-                                <li>Pour Firefox™ : https://support.mozilla.org/</li>
-                                <li>Pour Opera™ : http://help.opera.com/</li>
-                            </ul>
-                            
-                            <p class="p-title">5. Vos données sont-elles partagées avec d’autres sociétés ?</p>
-                            <p class="p-text">La Fondation Française de l'Ordre de Malte ne communique les données qu’elle collecte qu’à ses services internes ainsi qu’à ses prestataires de services et leurs personnels eu égard à l’exécution des prestations qui leurs sont confiées et qu’ils doivent réaliser pour le compte de la Fondation Française de l'Ordre de Malte.</p>
-                            <p class="p-text">Toutes les personnes ayant accès à vos données sont habilitées et tenues par une obligation de confidentialité.</p>
-                            <p class="p-text">Sauf opposition de votre part, la Fondation Française de l'Ordre de Malte est susceptible de partager les données relatives à ses donateurs ou prospects avec des organismes du secteur caritatif et des prestataires d'enrichissement.</p>
-                            
-                            <p class="p-title">6. Combien de temps vos données seront-elles conservées ?</p>
-                            <p class="p-text">Nous veillons à conserver vos données personnelles pendant une durée qui n’excède pas la durée nécessaire aux finalités exposées au point 2 ou conformément à ce qui est prévu par la loi applicable.</p>
-                            <p class="p-text">Les données collectées par les cookies sont conservées 13 mois maximum.</p>
-                            
-                            <p class="p-title">7. Sur quels fondements juridiques repose le traitement de vos données ?</p>
-                            <p class="p-text">Les traitements de vos données collectées ont pour fondements juridiques :</p>
-                            <ul>
-                                <li>l’intérêt légitime à nos activités et notre mission</li>
-                                <li>le consentement</li>
-                                <li>l’obligation légale selon les circonstances de la collecte des données</li>
-                            </ul>
-                            
-                            <p class="p-title">8. Comment pouvez-vous exercer vos droits ?</p>
-                            <p class="p-text">Conformément à la règlementation générale relative à la protection des données, vous bénéficiez de droits d’accès, de rectification, d’opposition, de suppression et de portabilité de vos données.</p>
-                            <p class="p-text">Pour exercer vos droits, vous pouvez adresser une demande accompagnée d’un justificatif d’identité valide :</p>
-                            <ul>
-                                <li>par voie postale : 42 rue de Volontaires, 75015 Paris
-                                <li>par courriel : dpo.rgpd@ordredemaltefrance.org 
-                            </ul>
-                            
-                            <p class="p-title">9. Contact</p>
-                            <p class="p-text">Pour toute demande d’information concernant la politique de protection des données à caractère personnel de la Fondation Française de l'Ordre de Malte, vous pouvez vous adresser par courrier électronique au Délégué à la protection des données</p>
+							<p class="p-title">1. Donnée personnelle</p>
+							<p class="p-text">
+								C'est toute information relative à une personne physique susceptible
+								d'être identifiée, directement ou indirectement : (ex. nom, no
+								d’immatriculation, no de téléphone, photographie, date de naissance,
+								commune de résidence, empreinte digitale...).
+							</p>
+
+							<p class="p-title">
+								2. Pourquoi certaines de vos données sont-elles collectées ?
+							</p>
+							<p class="p-text">
+								Les données personnelles recueillies par la Fondation Française de
+								l'Ordre de Malte nous permettent de :
+							</p>
+
+							<ul>
+								<li>
+									Vous assurer une relation donateurs, testateurs, potentiels
+									donateurs et potentiels testateurs de qualité ;
+								</li>
+								<li>
+									Vous fournir des services : réponse aux demandes de contact,
+									envoi de documentations ou d'informations ;
+								</li>
+								<li>
+									Mieux cibler nos campagnes de collecte de dons et en assurer le
+									suivi ;
+								</li>
+								<li>
+									Vous offrir une navigation optimale sur le site : adaptation de
+									l’affichage en fonction du terminal utilisé, stockage des
+									préférences, etc ;
+								</li>
+								<li>
+									Vous proposer des fonctions de partage sur les réseaux sociaux ;
+								</li>
+								<li>
+									Réaliser des analyses statistiques des visites et des
+									remplissage de formulaire sur notre site.
+								</li>
+							</ul>
+
+							<p class="p-title">3. Quelles données personnelles sont collectées ?</p>
+
+							<p class="p-text">
+								Nous collectons des données personnelles lorsque vous remplissez un
+								de nos formulaires de signature de pétition, de signature de
+								manifeste, d'inscription à la newsletter, de sondage en ligne ou par
+								le biais de cookies. Un "cookie" est un petit fichier informatique,
+								envoyé par le serveur d’un site internet et enregistré sur votre
+								ordinateur, tablette ou téléphone.
+							</p>
+
+							<p class="p-title">Par les formulaires</p>
+							<p class="p-text">
+								Lorsque vous remplissez un formulaire sur notre site, le caractère
+								obligatoire ou facultatif des données personnelles vous est signalé
+								par un astérisque. Il peut s’agir des données suivantes :
+							</p>
+							<ul>
+								<li>Nom et prénom</li>
+								<li>Adresse postale et ville de résidence</li>
+								<li>Numéro de téléphone et adresse e-mail</li>
+							</ul>
+
+							<p class="p-title">Par les cookies</p>
+							<p class="p-text">
+								Certaines données sont collectées automatiquement lors de votre
+								visite sur le site, par le biais de cookies.
+							</p>
+							<p class="p-text">
+								Les cookies ont notamment pour but de collecter des informations
+								relatives à votre navigation : données d’identification électronique
+								(adresse IP, zone géographique), données d’activité sur notre site
+								(pages visitées, paramètres de la visite, etc.). Ils sont gérés par
+								votre navigateur internet.
+							</p>
+							<p class="p-text">4 types de cookies sont utilisés par notre site :</p>
+							<ul>
+								<li>
+									Des cookies internes nécessaires au site pour fonctionner de
+									manière optimale
+								</li>
+								<li>
+									Des cookies tiers de mesure d’audience et de suivi de votre
+									activité en ligne (Google Analytics, Woopra, adfinitas)
+								</li>
+								<li>
+									Des cookies tiers destinés à améliorer l’interactivité du site
+									et son contenu multimédia (Facebook, Twitter). >Ces réseaux
+									sociaux peuvent collecter des données relatives à votre
+									navigation sur notre site et associées aux données personnelles
+									dont ils disposent.
+								</li>
+								<li>
+									Des cookies tiers destinés à mieux cibler nos campagnes
+									marketing (Adroll, Oath, MesOpinions, Orixa Media, TimeOne,
+									Facebook, Bing, Google, etc...)
+								</li>
+							</ul>
+
+							<p class="p-text">
+								Nous vous invitons à consulter les politiques de protection de la
+								vie privée des différents services tiers nommés ci-dessus afin de
+								prendre connaissance des finalités d'utilisation, notamment
+								publicitaires, des informations de navigation qu'ils peuvent
+								recueillir grâce à ces boutons applicatifs. Ces politiques de
+								protection doivent vous permettre d'exercer vos choix auprès de ces
+								réseaux sociaux, notamment en paramétrant vos comptes d'utilisation
+								de chacun de ces réseaux.
+							</p>
+
+							<table>
+								<thead>
+									<tr>
+										<th width="100">Prestataires</th>
+										<th width="200">Politiques de confidentialité</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Adroll</td>
+										<td>https://www.adroll.com/about/trust-center</td>
+									</tr>
+									<tr>
+										<td>Google</td>
+										<td>https://policies.google.com/technologies/ads</td>
+									</tr>
+									<tr>
+										<td>Facebook</td>
+										<td>https://www.facebook.com/policy</td>
+									</tr>
+									<tr>
+										<td>AOL (part of Oath)</td>
+										<td>
+											https://policies.oath.com/us/en/oath/privacy/index.html
+										</td>
+									</tr>
+									<tr>
+										<td>Yahoo (part of Oath)</td>
+										<td>
+											https://policies.oath.com/us/en/oath/privacy/index.html
+										</td>
+									</tr>
+									<tr>
+										<td>Bidswitch</td>
+										<td>http://www.bidswitch.com/privacy-policy/</td>
+									</tr>
+									<tr>
+										<td>AppNexus</td>
+										<td>
+											https://www.appnexus.com/en/company/platform-privacy-policy
+										</td>
+									</tr>
+									<tr>
+										<td>LiveRamp</td>
+										<td>https://liveramp.com/privacy/</td>
+									</tr>
+									<tr>
+										<td>Open X</td>
+										<td>https://www.openx.com/legal/privacy-policy/</td>
+									</tr>
+									<tr>
+										<td>Rubicon</td>
+										<td>https://rubiconproject.com/privacy-policy/</td>
+									</tr>
+									<tr>
+										<td>Index</td>
+										<td>https://www.index.com/privacy/</td>
+									</tr>
+									<tr>
+										<td>Pubmatic</td>
+										<td>https://pubmatic.com/legal/privacy-policy/</td>
+									</tr>
+									<tr>
+										<td>Taboola</td>
+										<td>https://www.taboola.com/privacy-policy</td>
+									</tr>
+									<tr>
+										<td>Outbrain</td>
+										<td>https://www.outbrain.com/legal/</td>
+									</tr>
+									<tr>
+										<td>TripleLift</td>
+										<td>https://triplelift.com/</td>
+									</tr>
+									<tr>
+										<td>Pixalate</td>
+										<td>http://www.pixalate.com/privacypolicy/</td>
+									</tr>
+									<tr>
+										<td>adfinitas</td>
+										<td>https://www.adfinitas.fr/mentions-legales.html</td>
+									</tr>
+									<tr>
+										<td>Orixa</td>
+										<td>
+											https://www.orixa-media.com/politique-de-confidentialite/
+										</td>
+									</tr>
+									<tr>
+										<td>MesOpinions</td>
+										<td>https://www.mesopinions.com/mentions-legales</td>
+									</tr>
+									<tr>
+										<td>TimeOne</td>
+										<td>
+											https://privacy.timeonegroup.com/?utm_source=privacy_perf
+										</td>
+									</tr>
+									<tr>
+										<td>Woopra</td>
+										<td>https://www.woopra.com/privacy</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p class="p-text">
+								Ces cookies peuvent également avoir pour objectif de vous
+								identifier, et/ou d’obtenir vos coordonnées, votre âge, vos revenus,
+								notamment auprès de tiers, en vue d’une réactivation à votre
+								attention, c’est-à-dire d’opérations de prospection qui vous
+								seraient destinées par divers moyens de communication (courrier
+								postal, email ou télémarketing par exemple).
+							</p>
+
+							<p class="p-title">4. Comment refuser les cookies ?</p>
+							<p class="p-text">
+								Vous pouvez vous opposer à l'enregistrement de cookies en
+								configurant votre navigateur.
+							</p>
+							<ul>
+								<li>Pour Internet Explorer™ : https://support.microsoft.com/</li>
+								<li>Pour Microsoft Edge : https://support.microsoft.com/</li>
+								<li>Pour Safari™ : https://support.apple.com/</li>
+								<li>Pour Chrome™ : https://support.google.com/</li>
+								<li>Pour Firefox™ : https://support.mozilla.org/</li>
+								<li>Pour Opera™ : http://help.opera.com/</li>
+							</ul>
+
+							<p class="p-title">
+								5. Vos données sont-elles partagées avec d’autres sociétés ?
+							</p>
+							<p class="p-text">
+								La Fondation Française de l'Ordre de Malte ne communique les données
+								qu’elle collecte qu’à ses services internes ainsi qu’à ses
+								prestataires de services et leurs personnels eu égard à l’exécution
+								des prestations qui leurs sont confiées et qu’ils doivent réaliser
+								pour le compte de la Fondation Française de l'Ordre de Malte.
+							</p>
+							<p class="p-text">
+								Toutes les personnes ayant accès à vos données sont habilitées et
+								tenues par une obligation de confidentialité.
+							</p>
+							<p class="p-text">
+								Sauf opposition de votre part, la Fondation Française de l'Ordre de
+								Malte est susceptible de partager les données relatives à ses
+								donateurs ou prospects avec des organismes du secteur caritatif et
+								des prestataires d'enrichissement.
+							</p>
+
+							<p class="p-title">
+								6. Combien de temps vos données seront-elles conservées ?
+							</p>
+							<p class="p-text">
+								Nous veillons à conserver vos données personnelles pendant une durée
+								qui n’excède pas la durée nécessaire aux finalités exposées au point
+								2 ou conformément à ce qui est prévu par la loi applicable.
+							</p>
+							<p class="p-text">
+								Les données collectées par les cookies sont conservées 13 mois
+								maximum.
+							</p>
+
+							<p class="p-title">
+								7. Sur quels fondements juridiques repose le traitement de vos
+								données ?
+							</p>
+							<p class="p-text">
+								Les traitements de vos données collectées ont pour fondements
+								juridiques :
+							</p>
+							<ul>
+								<li>l’intérêt légitime à nos activités et notre mission</li>
+								<li>le consentement</li>
+								<li>
+									l’obligation légale selon les circonstances de la collecte des
+									données
+								</li>
+							</ul>
+
+							<p class="p-title">8. Comment pouvez-vous exercer vos droits ?</p>
+							<p class="p-text">
+								Conformément à la règlementation générale relative à la protection
+								des données, vous bénéficiez de droits d’accès, de rectification,
+								d’opposition, de suppression et de portabilité de vos données.
+							</p>
+							<p class="p-text">
+								Pour exercer vos droits, vous pouvez adresser une demande
+								accompagnée d’un justificatif d’identité valide :
+							</p>
+							<ul>
+								<li>par voie postale : 42 rue de Volontaires, 75015 Paris</li>
+								<li>par courriel : dpo.rgpd@ordredemaltefrance.org</li>
+							</ul>
+
+							<p class="p-title">9. Contact</p>
+							<p class="p-text">
+								Pour toute demande d’information concernant la politique de
+								protection des données à caractère personnel de la Fondation
+								Française de l'Ordre de Malte, vous pouvez vous adresser par
+								courrier électronique au Délégué à la protection des données
+							</p>
 						</div>
 					</div>
 				</div>

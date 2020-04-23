@@ -87,7 +87,7 @@ footer {
 }
 
 @include media-breakpoint-down(sm) {
-    #cguModal {
+    #cguModal, #persoDataModal {
 
         .modal-body {
             .my-container {

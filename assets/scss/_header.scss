@@ -8,7 +8,7 @@
 	position: relative;
 
 	&.navSticky {
-		padding-top: $navBarHeight;
+		padding-top: $stickyHeight;
 	}
 
 	.header-container {
@@ -247,8 +247,13 @@
 	background-position: -724px 0px;
 	position: relative;
 
+	@include media-breakpoint-up(sm) {
+		& {
+			background-position: -500px 0px;
+		}
+	}
 	&.navSticky {
-		padding-top: $navBarHeight;
+		padding-top: $stickyHeight;
 	}
 
 	.header-container {

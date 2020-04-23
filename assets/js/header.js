@@ -50,9 +50,8 @@ $(document).ready(function() {
 
     $('.nav-mobile .link, .nav-mobile-expanded .link').on('click', function(e) {
         e.preventDefault();
-        const bandeauHeight = $('.bandeau-covid').height();
 
-        closeNavMobile(bandeauHeight, false);
+        closeNavMobile();
         if ($(this).hasClass('active') || isChangingPanel === true)
             return;
     

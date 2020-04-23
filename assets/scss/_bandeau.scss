@@ -12,10 +12,8 @@
 	position: relative;
 	z-index: 1;
 
-	p {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
+	p.left {
+		min-width: 103px;
 
 		span.covid {
 			font-weight: bold;
@@ -31,6 +29,19 @@
 			height: 20px;
 			font-size: 10px;
 			margin: auto 0;
+		}
+	}
+
+	p.right {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		line-height: 1.2;
+	}
+
+	@include media-breakpoint-down(xs) {
+		p.right {
+			font-size: 12px !important;
 		}
 	}
 }

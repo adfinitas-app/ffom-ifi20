@@ -10,6 +10,7 @@ $defaultFont: 'Roboto Condensed', sans-serif;
 
 //Navbar
 $navBarHeight: 90px;
+$stickyHeight: 150px;
 
 $transitionTime: 0.4s;
 
@@ -61,6 +62,6 @@ $font-sizes
 
 @include media-breakpoint-down(sm) {
   .modal-dialog {
-    padding-top: $navBarHeight;
+    padding-top: $stickyHeight;
   }
 }
