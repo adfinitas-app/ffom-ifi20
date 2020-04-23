@@ -97,6 +97,8 @@ $(document).ready(function () {
 		},
 	};
 
+	$('a[href*="#"]').off('touchstart touchend');
+
 	$(".don-type-item").on("click", function () {
 		if (isChangingContent === true)
 		return ;
