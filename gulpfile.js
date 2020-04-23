@@ -60,6 +60,9 @@ function docs(cb) {
 function inlineCss(cb) {
     return src(`${BUILD_FOLDER}/**/*.css`)
         //.pipe(sourcemaps.init())
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(cleanCSS({
             debug: true,
             compatibility: 'ie8'
@@ -73,12 +76,7 @@ function inlineJs(cb) {
     return src(`./assets/js/**/*.js`)
         //.pipe(sourcemaps.init())
         .pipe(babel({presets: ['@babel/preset-env']}))
-        
-        // .pipe(terser({
-        //     parse: {ecma: 2015},
-        //     compress: {ecma: 2015},
-        //     ie8: true
-        //   }))
+        .pipe(terser())
         .pipe(dest(`${BUILD_FOLDER}/assets/js`));
         //.pipe(sourcemaps.write())
 }

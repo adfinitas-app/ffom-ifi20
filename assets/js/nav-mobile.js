@@ -20,7 +20,6 @@ $(document).ready(function () {
 			$(".nav-mobile-expanded").slideDown("slow", function () {
 				$(".nav-desktop, .nav-mobile").addClass("sticky");
 				$(".header-desktop, .header-mobile").addClass("navSticky");
-				isNavSticky = true;
 			});
 		}
 	});

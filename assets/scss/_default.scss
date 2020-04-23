@@ -60,8 +60,12 @@ $font-sizes
   }
 }
 
+.modal-dialog {
+  padding-top: 115px;
+}
+
 @include media-breakpoint-down(sm) {
   .modal-dialog {
-    padding-top: $stickyHeight;
+    padding-top: 160px;
   }
 }
