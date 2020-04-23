@@ -1,8 +1,6 @@
 transferQueryParams($('.transmit-query-var'));
 
-function addOrModifyQueryParameter(elem, parameter, newValue, attr) {
-    if (attr === undefined)
-        attr = 'href';
+function addOrModifyQueryParameter(elem, parameter, newValue, attr = 'href') {
     if (!elem || elem.length === 0)
     return false;
     
@@ -32,20 +30,18 @@ function addOrModifyQueryParameter(elem, parameter, newValue, attr) {
     
     if (elemValue) {
         // Modify
-        newElemHref = newElemHref.replace(parameter + '=' + elemValue, parameter + '=' + newValue)
+        newElemHref = newElemHref.replace(`${parameter}=${elemValue}`, `${parameter}=${newValue}`)
     } else {
         // Add
         if (addedInterrogation)
-            newElemHref += parameter + '=' + newValue;
+            newElemHref += `${parameter}=${newValue}`;
         else
-            newElemHref += '&' + parameter + '=' + newValue;
+            newElemHref += `&${parameter}=${newValue}`;
     }
     elem.attr(attr, newElemHref + hashtag);
 }
 
-function transferQueryParams($links, attr) {
-    if (attr === undefined)
-        attr = 'href';
+function transferQueryParams($links, attr = 'href') {
     const url_string = window.location.href;
     const url = new URL(url_string);
     
