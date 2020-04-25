@@ -39,7 +39,7 @@ $(document).ready(function() {
         });
     }
 
-    $('.nav-desktop .link').on('click', function(e) {
+    $('.nav-desktop .link, .header-desktop .nos-besoins.link').on('click', function(e) {
         e.preventDefault();
 
         $('.link-croix').fadeOut(600);
@@ -48,7 +48,7 @@ $(document).ready(function() {
         showHeaderPanel($(this).data('country'));
     });
 
-    $('.nav-mobile .link, .nav-mobile-expanded .link').on('click', function(e) {
+    $('.nav-mobile .link, .nav-mobile-expanded .link, .header-mobile .nos-besoins.link').on('click', function(e) {
         e.preventDefault();
 
         closeNavMobile();

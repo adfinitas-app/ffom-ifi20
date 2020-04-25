@@ -105,12 +105,18 @@
 
 @include media-breakpoint-down(xs) {
     .button-don-refonte {
+		//min-width: auto;
+
 		.my-border-white {
 			width: 100%;
 			height: 100%;
 			border: 2px solid white;
-			padding: 7px 30px;
+			padding: 7px 28px;
 			transition: padding $transitionTime, margin $transitionTime, border-color 0.6s;
+
+			.cross {
+				left:16
+			}
 		}
 	
 		&:hover {
@@ -120,7 +126,7 @@
 	
 			.my-border-white {
 				padding: 0;
-				margin: 7px 30px;
+				margin: 7px 28px;
 				border-color: transparent;
 			}
 		}

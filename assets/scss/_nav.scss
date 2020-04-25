@@ -1,12 +1,12 @@
 nav.nav-desktop {
  
-    position: relative;
+    position: absolute;
     z-index: 9999;
+    top: 0;
+    left: 0;
     
     &.sticky {
         position: fixed;
-        top: 0px;
-        left: 0px;
     }
     width: 100%;
     display: flex;
@@ -41,7 +41,7 @@ nav.nav-desktop {
                 text-transform: uppercase;
                 
                 span {
-                    opacity: 0.3;
+                    opacity: 0.8;
                     padding: 0 10px;
                 }
     
@@ -67,13 +67,13 @@ nav.nav-desktop {
 }
 
 .nav-mobile {
-    position: relative;
+    position: absolute;
     z-index: 9999;
+    top: 0;
+    left: 0;
     
     &.sticky {
         position: fixed;
-        top: 0px;
-        left: 0px;
     }
     display: flex;
     flex-direction: column;

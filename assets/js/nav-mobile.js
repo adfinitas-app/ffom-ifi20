@@ -1,9 +1,14 @@
 function closeNavMobile() {
+	const bandeauHeight = $('.bandeau-covid').height();
+	console.log('bandeauheight', bandeauHeight)
 	$(".nav-mobile .hamburger").removeClass("is-active");
-    $("body").css({"overflow": "auto", "padding-right": "0px"});
-    $(".sticky").css({"padding-right": "0px"});
-
-	$(".nav-mobile-expanded").slideUp("slow", function () {});
+    $("body").css({"overflow": "auto"});
+    //$(".sticky").css({"padding-right": "0px"});
+	
+	$(".nav-mobile-expanded").slideUp("slow", function () {
+		console.log(('checksticky'));
+		checkSticky($(window), bandeauHeight);
+	});
 }
 
 $(document).ready(function () {
@@ -15,11 +20,12 @@ $(document).ready(function () {
 			//$('.header-mobile').css('padding-top', '0px');
 			closeNavMobile();
 		} else {
-            $("body").css({"overflow": "hidden", "padding-right": "16px"});
-            $(".sticky").css({"padding-right": "16px"});
+            $("body").css({"overflow": "hidden"});
+			//$(".sticky").css({"padding-right": "16px"});
+			$('.nav-mobile').addClass('sticky');
 			$(".nav-mobile-expanded").slideDown("slow", function () {
-				$(".nav-desktop, .nav-mobile").addClass("sticky");
-				$(".header-desktop, .header-mobile").addClass("navSticky");
+				//$(".nav-desktop, .nav-mobile").addClass("sticky");
+				//$(".header-desktop, .header-mobile").addClass("navSticky");
 			});
 		}
 	});

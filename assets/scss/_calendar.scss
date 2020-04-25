@@ -98,7 +98,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 30px 0;
+        margin: 25px 0;
 
         .jour {
             font-size: 20px;
@@ -112,6 +112,7 @@
             color: $color-urgency;
             text-transform: uppercase;
             line-height: 0.9;
+            text-align: center;
         }
 
         .avant {
@@ -119,6 +120,7 @@
             color: $color-urgency;
             text-transform: uppercase;
             line-height: 0.9;
+            text-align: center;
         }
     }
 
@@ -134,6 +136,14 @@
             font-size: 22px;
             text-transform: uppercase;
             font-weight: bold;
+            line-height: 1.0;
+            text-align: center;
+        }
+
+        .departement {
+            color: $color-dark-blue;
+            font-size: 18px;
+            text-align: center;
         }
 
         .interrogation {

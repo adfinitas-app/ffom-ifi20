@@ -37,12 +37,14 @@
 		<!-- End Google Tag Manager (noscript) -->
 		<!-- --------------------------------------------------------------- -->
 		<!-- BANDEAU COVID -->
-		<div class="bandeau-covid d-none">
-			<p class="text-center fs-17">
+		<div class="bandeau-covid">
+			<p class="text-center fs-17 left">
 				<span class="exclamation">!</span>
 				<span class="covid">COVID-19</span>
-				Plus que jamais, pour maintenir nos missions et répondre à toutes les fragilités,
-				nous avons besoin de votre aide. Soutenez-nous.
+			</p>
+			<p class="text-center fs-17 right">
+				Plus que jamais, pour maintenir nos missions et répondre à toutes les
+				fragilités, nous avons besoin de votre aide. Soutenez-nous.
 			</p>
 		</div>
 		<!-- BANDEAU COVID -->
@@ -50,19 +52,7 @@
 		<!-- HEADER DESKTOP -->
 		<header class="header-desktop navSticky d-none d-md-block">
 			<!-- NAV DESKTOP-->
-			<nav class="nav-desktop sticky d-none d-md-flex">
-				<!-- BANDEAU COVID -->
-				<div class="bandeau-covid">
-					<p class="text-center fs-17 left">
-						<span class="exclamation">!</span>
-						<span class="covid">COVID-19</span>
-					</p>
-					<p class="text-center fs-17 right">
-						Plus que jamais, pour maintenir nos missions et répondre à toutes les
-						fragilités, nous avons besoin de votre aide. Soutenez-nous.
-					</p>
-				</div>
-				<!-- BANDEAU COVID -->
+			<nav class="nav-desktop d-none d-md-flex">
 				<nav class="navigation">
 					<a href="#panel-default" class="link anchor" data-country="default">
 						<img src="assets/img/logo.png" alt="logo" />
@@ -124,6 +114,9 @@
 								<span class="text fs-14">Je fais un don IFI</span>
 							</div>
 						</a>
+					</div>
+					<div>
+						<a class="nos-besoins link" href="#panel-france" data-country="france"><img src="assets/img/picto/link-croix.png">Nos besoins en france</a>
 					</div>
 				</div>
 			</div>
@@ -330,19 +323,7 @@
 		<!-- HEADER MOBILE -->
 		<header class="header-mobile navSticky d-block d-md-none">
 			<!-- NAV MOBILE-->
-			<nav class="nav-mobile sticky d-flex d-md-none">
-				<!-- BANDEAU COVID -->
-				<div class="bandeau-covid">
-					<p class="text-center fs-17 left">
-						<span class="exclamation">!</span>
-						<span class="covid">COVID-19</span>
-					</p>
-					<p class="text-center fs-17 right">
-						Plus que jamais, pour maintenir nos missions et répondre à toutes les
-						fragilités, nous avons besoin de votre aide. Soutenez-nous.
-					</p>
-				</div>
-				<!-- BANDEAU COVID -->
+			<nav class="nav-mobile d-flex d-md-none">
 				<div class="nav-mobile-container">
 					<a href="#panel-default" class="link anchor" data-country="default">
 						<img src="assets/img/logo-mobile.png" alt="logo" />
@@ -399,7 +380,7 @@
 			</nav>
 			<!-- NAV MOBILE -->
 
-			<!-- HEADER CONTAINER -->
+			<!-- HEADER CONTAINER MOBILE -->
 			<div class="header-container header-active" id="panel-default-mobile">
 				<img
 					src="assets/img/header-plus-palestin-mobile.png"
@@ -415,7 +396,7 @@
 				<span class="pour-prendre">Pour prendre soin des plus fragiles</span>
 
 				<div class="pour-prendre-container">
-					<div class="d-inline-block">
+					<div class="text-center">
 						<a
 							href="https://fondationordredemalte.org/faire-un-don/faire-un-don-en-ligne/"
 							target="_blank"
@@ -427,11 +408,14 @@
 							</div>
 						</a>
 					</div>
+					<div>
+						<a class="nos-besoins link" href="#panel-france" data-country="france"><img src="assets/img/picto/link-croix.png">Nos besoins en france</a>
+					</div>
 				</div>
 			</div>
-			<!-- HEADER CONTAINER -->
+			<!-- HEADER CONTAINER MOBILE -->
 
-			<!-- HEADER CONTAINER FRANCE -->
+			<!-- HEADER CONTAINER MOBILE FRANCE -->
 			<div class="header-container-france" id="panel-france-mobile">
 				<img src="assets/img/header-plus-france.png" class="header-plus-img" />
 
@@ -485,9 +469,9 @@
 					>
 				</div>
 			</div>
-			<!-- HEADER CONTAINER FRANCE -->
+			<!-- HEADER CONTAINER MOBILE FRANCE -->
 
-			<!-- HEADER CONTAINER SYRIE -->
+			<!-- HEADER CONTAINER MOBILE SYRIE -->
 			<div class="header-container-syrie" id="panel-syrie-mobile">
 				<img src="assets/img/header-plus-syrie.png" class="header-plus-img" />
 
@@ -540,9 +524,9 @@
 					>
 				</div>
 			</div>
-			<!-- HEADER CONTAINER SYRIE -->
+			<!-- HEADER CONTAINER MOBILE SYRIE -->
 
-			<!-- HEADER CONTAINER PALESTINE -->
+			<!-- HEADER CONTAINER MOBILE PALESTINE -->
 			<div class="header-container-palestine" id="panel-palestine-mobile">
 				<img src="assets/img/header-plus-palestine.png" class="header-plus-img" />
 
@@ -591,7 +575,7 @@
 					</p>
 				</div>
 			</div>
-			<!-- HEADER CONTAINER PALESTINE -->
+			<!-- HEADER CONTAINER MOBILE PALESTINE -->
 		</header>
 		<!-- HEADER MOBILE -->
 		<!-- --------------------------------------------------------------- -->
@@ -1071,14 +1055,7 @@
 								</div>
 								<div class="col-6 col-md-12">
 									<div class="bloc-zone">
-										<span class="zone">Zone</span>
-										<img
-											class="interrogation"
-											src="assets/img/picto/interrogation.png"
-											data-toggle="tooltip"
-											data-placement="bottom"
-											title="Département 1 à 974/976, et résidents à l’étranger"
-										/>
+										<span class="departement">Département 1 à 974/976, et résidents à l’étranger</span>
 									</div>
 								</div>
 							</div>
@@ -1724,7 +1701,7 @@
 							</p>
 							<ul>
 								<li>par voie postale : 42 rue de Volontaires, 75015 Paris</li>
-								<li>par courriel : dpo.rgpd@ordredemaltefrance.org</li>
+								<li>par courriel : dpo.fondation@ordredemaltefrance.org ou courrier à : DPO Fondation Française de l’Ordre de Malte – EIRL VALPROMY - 122 Route d’Arcachon 33610 CESTAS.</li>
 							</ul>
 
 							<p class="p-title">9. Contact</p>
